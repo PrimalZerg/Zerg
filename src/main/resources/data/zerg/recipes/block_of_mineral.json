@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zerg:mineral_shard"
+    },
+    "1": {
+      "item": "zerg:mineral_shard"
+    },
+    "2": {
+      "item": "zerg:mineral_shard"
+    },
+    "3": {
+      "item": "zerg:mineral_shard"
+    },
+    "4": {
+      "item": "zerg:mineral_shard"
+    },
+    "5": {
+      "item": "zerg:mineral_shard"
+    },
+    "6": {
+      "item": "zerg:mineral_shard"
+    },
+    "7": {
+      "item": "zerg:mineral_shard"
+    },
+    "8": {
+      "item": "zerg:mineral_shard"
+    }
+  },
+  "result": {
+    "item": "zerg:mineral_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "small_zerg_claw_side",
+        "1": "small_zerg_claw_top"
+      },
+      "name": "default"
+    }
+  }
+}

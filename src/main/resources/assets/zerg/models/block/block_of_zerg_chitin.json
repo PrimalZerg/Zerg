@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zerg:blocks/zerg_chitin",
+    "up": "zerg:blocks/zerg_chitin",
+    "north": "zerg:blocks/zerg_chitin",
+    "east": "zerg:blocks/zerg_chitin",
+    "south": "zerg:blocks/zerg_chitin",
+    "west": "zerg:blocks/zerg_chitin",
+    "particle": "zerg:blocks/zerg_chitin"
+  }
+}

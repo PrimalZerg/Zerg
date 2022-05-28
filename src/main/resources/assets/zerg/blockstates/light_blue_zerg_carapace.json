@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "zerg:block/light_blue_zerg_carapace",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "zerg:block/light_blue_zerg_carapace"
+    },
+    "axis=z": {
+      "model": "zerg:block/light_blue_zerg_carapace",
+      "x": 90
+    }
+  }
+}

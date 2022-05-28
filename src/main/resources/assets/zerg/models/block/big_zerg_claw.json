@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zerg:blocks/zerg_claw_big_top",
+    "up": "zerg:blocks/zerg_claw_big_top",
+    "north": "zerg:blocks/zerg_claw_big_side",
+    "east": "zerg:blocks/zerg_claw_big_side",
+    "south": "zerg:blocks/zerg_claw_big_side",
+    "west": "zerg:blocks/zerg_claw_big_side",
+    "particle": "zerg:blocks/zerg_claw_big_top"
+  }
+}

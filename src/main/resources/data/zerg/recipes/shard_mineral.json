@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zerg:mineral_block"
+    }
+  ],
+  "result": {
+    "item": "zerg:mineral_shard",
+    "count": 9
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "zerg:zerg_claw"
+    },
+    "3": {
+      "item": "zerg:zerg_claw"
+    },
+    "4": {
+      "item": "zerg:zerg_claw"
+    },
+    "5": {
+      "item": "zerg:zerg_claw"
+    },
+    "7": {
+      "item": "zerg:zerg_claw"
+    }
+  },
+  "result": {
+    "item": "zerg:medium_zerg_claw",
+    "count": 1
+  }
+}

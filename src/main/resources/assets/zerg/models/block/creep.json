@@ -1,0 +1,8 @@
+{
+  "parent": "zerg:custom/creep",
+  "textures": {
+    "all": "zerg:blocks/creep",
+    "particle": "zerg:blocks/creep",
+    "0": "zerg:blocks/creep"
+  }
+}

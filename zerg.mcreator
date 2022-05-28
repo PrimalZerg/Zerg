@@ -1,0 +1,509 @@
+{
+  "mod_elements": [
+    {
+      "name": "WhiteZergCarapace",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_zerg_carapace"
+    },
+    {
+      "name": "BlueZergCarapace",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_zerg_carapace"
+    },
+    {
+      "name": "GrayZergCarapace",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gray_zerg_carapace"
+    },
+    {
+      "name": "LightGrayZergCarapace",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_gray_zerg_carapace"
+    },
+    {
+      "name": "RedZergCarapace",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_zerg_carapace"
+    },
+    {
+      "name": "LightBlueZergCarapace",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_zerg_carapace"
+    },
+    {
+      "name": "PinkZergCarapace",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_zerg_carapace"
+    },
+    {
+      "name": "PurpleZergCarapace",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_zerg_carapace"
+    },
+    {
+      "name": "CyanZergCarapace",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_zerg_carapace"
+    },
+    {
+      "name": "YellowZergCarapace",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_zerg_carapace"
+    },
+    {
+      "name": "OrangeZergCarapace",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_zerg_carapace"
+    },
+    {
+      "name": "BlackZergCarapace",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_zerg_carapace"
+    },
+    {
+      "name": "LimeZergCarapace",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lime_zerg_carapace"
+    },
+    {
+      "name": "GreenZergCarapace",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_zerg_carapace"
+    },
+    {
+      "name": "MagentaZergCarapace",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magenta_zerg_carapace"
+    },
+    {
+      "name": "BrownZergCarapace",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_zerg_carapace"
+    },
+    {
+      "name": "MineralBlock",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mineral_block"
+    },
+    {
+      "name": "ZergMisc",
+      "type": "tab",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg_misc"
+    },
+    {
+      "name": "ZergClaw",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg_claw"
+    },
+    {
+      "name": "ZergCarapace",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg_carapace"
+    },
+    {
+      "name": "ZergMobs",
+      "type": "tab",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg_mobs"
+    },
+    {
+      "name": "MineralShard",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mineral_shard"
+    },
+    {
+      "name": "BlockOfZergChitin",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_zerg_chitin"
+    },
+    {
+      "name": "Creep",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creep"
+    },
+    {
+      "name": "Zergling",
+      "type": "livingentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zergling"
+    },
+    {
+      "name": "BlockOfMineral",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_mineral"
+    },
+    {
+      "name": "CarapaceBlack",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_black"
+    },
+    {
+      "name": "ShardMineral",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shard_mineral"
+    },
+    {
+      "name": "CarapaceBlue",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_blue"
+    },
+    {
+      "name": "CarapaceLightBlue",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_light_blue"
+    },
+    {
+      "name": "CarapacePurple",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_purple"
+    },
+    {
+      "name": "CarapaceMagenta",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_magenta"
+    },
+    {
+      "name": "CarapacePink",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_pink"
+    },
+    {
+      "name": "CarapaceOrange",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_orange"
+    },
+    {
+      "name": "CarapaceBrown",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_brown"
+    },
+    {
+      "name": "CarapaceGray",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_gray"
+    },
+    {
+      "name": "CarapaceLightGray",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_light_gray"
+    },
+    {
+      "name": "CarapaceWhite",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_white"
+    },
+    {
+      "name": "CarapaceLime",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_lime"
+    },
+    {
+      "name": "CarapaceGreen",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_green"
+    },
+    {
+      "name": "CarapaceRed",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_red"
+    },
+    {
+      "name": "CarapaceYellow",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_yellow"
+    },
+    {
+      "name": "CarapaceCyan",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carapace_cyan"
+    },
+    {
+      "name": "Chitin",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chitin"
+    },
+    {
+      "name": "MediumZergClaw",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medium_zerg_claw"
+    },
+    {
+      "name": "HostileZergling",
+      "type": "livingentity",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_zergling"
+    },
+    {
+      "name": "Zerglingdrops",
+      "type": "loottable",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerglingdrops"
+    },
+    {
+      "name": "SmallZergClaw",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_zerg_claw"
+    },
+    {
+      "name": "SmallClawBlock",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_claw_block"
+    },
+    {
+      "name": "MediumClawBlock",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medium_claw_block"
+    },
+    {
+      "name": "BigZergClaw",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_zerg_claw"
+    },
+    {
+      "name": "WildHydralisk",
+      "type": "livingentity",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_hydralisk"
+    },
+    {
+      "name": "HostileHydralisk",
+      "type": "livingentity",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_hydralisk"
+    },
+    {
+      "name": "Spine",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spine"
+    },
+    {
+      "name": "SpineShooter",
+      "type": "rangeditem",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spine_shooter"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.zerg.block_of_zerg_chitin": "Block Of Zerg Chitin",
+      "block.zerg.light_gray_zerg_carapace": "Light Gray Zerg Carapace",
+      "block.zerg.magenta_zerg_carapace": "Magenta Zerg Carapace",
+      "itemGroup.tabzerg_misc": "Zerg Misc",
+      "item.zerg.spine": "Spine",
+      "block.zerg.blue_zerg_carapace": "BLue Zerg Carapace",
+      "block.zerg.yellow_zerg_carapace": "Yellow Zerg Carapace",
+      "itemGroup.tabzerg_mobs": "Zerg Mobs",
+      "block.zerg.gray_zerg_carapace": "Gray Zerg Carapace",
+      "block.zerg.orange_zerg_carapace": "Orange Zerg Carapace",
+      "item.zerg.zergling_spawn_egg": "WildZergling Spawn Egg",
+      "block.zerg.creep": "Creep",
+      "block.zerg.pink_zerg_carapace": "Pink Zerg Carapace",
+      "item.zerg.mineral_shard": "Mineral Shard",
+      "entity.zerg.zergling": "WildZergling",
+      "block.zerg.light_blue_zerg_carapace": "Light BLue Zerg Carapace",
+      "block.zerg.black_zerg_carapace": "BLack Zerg Carapace",
+      "block.zerg.cyan_zerg_carapace": "Cyan Zerg Carapace",
+      "block.zerg.red_zerg_carapace": "Red Zerg Carapace",
+      "block.zerg.medium_zerg_claw": "Medium Zerg Claw",
+      "block.zerg.white_zerg_carapace": "White Zerg Carapace",
+      "entity.zerg.wild_hydralisk": "Wild Hydralisk",
+      "item.zerg.hostile_zergling_spawn_egg": "Feral Zergling Spawn Egg",
+      "item.zerg.zerg_carapace": "Zerg Carapace",
+      "item.zerg.wild_hydralisk_spawn_egg": "Wild Hydralisk Spawn Egg",
+      "item.zerg.zerg_claw": "Zerg Claw",
+      "block.zerg.big_zerg_claw": "Big Zerg Claw",
+      "item.zerg.hostile_hydralisk_spawn_egg": "Feral Hydralisk Spawn Egg",
+      "entity.zerg.hostile_hydralisk": "Feral Hydralisk",
+      "block.zerg.brown_zerg_carapace": "Brown Zerg Carapace",
+      "block.zerg.lime_zerg_carapace": "Lime Zerg Carapace",
+      "item.zerg.spine_shooter": "Spine Shooter",
+      "block.zerg.mineral_block": "Mineral Block",
+      "block.zerg.purple_zerg_carapace": "Purple Zerg Carapace",
+      "entity.zerg.hostile_zergling": "Feral Zergling",
+      "block.zerg.small_zerg_claw": "Small Zerg Claw",
+      "block.zerg.green_zerg_carapace": "Green Zerg Carapace"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "zerg",
+    "modName": "Zerg",
+    "version": "1.0.0",
+    "author": "beth, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.primal.zerg",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

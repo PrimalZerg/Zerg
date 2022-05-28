@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "zerg:block/medium_zerg_claw",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "zerg:block/medium_zerg_claw"
+    },
+    "axis=z": {
+      "model": "zerg:block/medium_zerg_claw",
+      "x": 90
+    }
+  }
+}

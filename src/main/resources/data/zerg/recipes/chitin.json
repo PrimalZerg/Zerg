@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "zerg:zerg_carapace"
+    },
+    "3": {
+      "item": "zerg:zerg_carapace"
+    },
+    "4": {
+      "item": "zerg:zerg_carapace"
+    },
+    "5": {
+      "item": "zerg:zerg_carapace"
+    },
+    "7": {
+      "item": "zerg:zerg_carapace"
+    }
+  },
+  "result": {
+    "item": "zerg:zerg_carapace",
+    "count": 1
+  }
+}

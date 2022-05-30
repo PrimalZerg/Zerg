@@ -5,12 +5,14 @@
 package net.primal.zerg.init;
 
 import net.primal.zerg.entity.ZerglingEntity;
+import net.primal.zerg.entity.WildRoachEntity;
 import net.primal.zerg.entity.WildHydraliskEntityProjectile;
 import net.primal.zerg.entity.WildHydraliskEntity;
 import net.primal.zerg.entity.SpineShooterEntity;
 import net.primal.zerg.entity.HostileZerglingEntity;
 import net.primal.zerg.entity.HostileHydraliskEntityProjectile;
 import net.primal.zerg.entity.HostileHydraliskEntity;
+import net.primal.zerg.entity.FeralRoachEntity;
 import net.primal.zerg.ZergMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -60,6 +62,16 @@ public class ZergModEntities {
 	public static final RegistryObject<EntityType<SpineShooterEntity>> SPINE_SHOOTER = register("projectile_spine_shooter",
 			EntityType.Builder.<SpineShooterEntity>of(SpineShooterEntity::new, MobCategory.MISC).setCustomClientFactory(SpineShooterEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<WildRoachEntity>> WILD_ROACH = register("wild_roach",
+			EntityType.Builder.<WildRoachEntity>of(WildRoachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WildRoachEntity::new)
+
+					.sized(1.3f, 1.5999999999999999f));
+	public static final RegistryObject<EntityType<FeralRoachEntity>> FERAL_ROACH = register("feral_roach",
+			EntityType.Builder.<FeralRoachEntity>of(FeralRoachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FeralRoachEntity::new)
+
+					.sized(1.3f, 1.5999999999999999f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -72,6 +84,8 @@ public class ZergModEntities {
 			HostileZerglingEntity.init();
 			WildHydraliskEntity.init();
 			HostileHydraliskEntity.init();
+			WildRoachEntity.init();
+			FeralRoachEntity.init();
 		});
 	}
 
@@ -81,5 +95,7 @@ public class ZergModEntities {
 		event.put(HOSTILE_ZERGLING.get(), HostileZerglingEntity.createAttributes().build());
 		event.put(WILD_HYDRALISK.get(), WildHydraliskEntity.createAttributes().build());
 		event.put(HOSTILE_HYDRALISK.get(), HostileHydraliskEntity.createAttributes().build());
+		event.put(WILD_ROACH.get(), WildRoachEntity.createAttributes().build());
+		event.put(FERAL_ROACH.get(), FeralRoachEntity.createAttributes().build());
 	}
 }

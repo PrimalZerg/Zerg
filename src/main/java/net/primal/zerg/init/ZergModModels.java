@@ -4,6 +4,7 @@
  */
 package net.primal.zerg.init;
 
+import net.primal.zerg.client.model.Modelroach;
 import net.primal.zerg.client.model.Modelhydralisk;
 import net.primal.zerg.client.model.Modeldehaka;
 import net.primal.zerg.client.model.Modelcustom_model;
@@ -17,6 +18,7 @@ import net.minecraftforge.api.distmarker.Dist;
 public class ZergModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelroach.LAYER_LOCATION, Modelroach::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(Modeldehaka.LAYER_LOCATION, Modeldehaka::createBodyLayer);
 		event.registerLayerDefinition(Modelhydralisk.LAYER_LOCATION, Modelhydralisk::createBodyLayer);

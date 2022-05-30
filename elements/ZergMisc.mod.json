@@ -4,7 +4,7 @@
   "definition": {
     "name": "Zerg Misc",
     "icon": {
-      "value": "CUSTOM:ZergClaw"
+      "value": "CUSTOM:ZergCarapace"
     },
     "showSearch": false
   }

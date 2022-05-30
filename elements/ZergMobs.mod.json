@@ -4,7 +4,7 @@
   "definition": {
     "name": "Zerg Mobs",
     "icon": {
-      "value": "CUSTOM:ZergCarapace"
+      "value": "CUSTOM:ZergClaw"
     },
     "showSearch": false
   }

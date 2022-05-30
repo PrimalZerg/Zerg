@@ -18,7 +18,7 @@ public class ZergModTabs {
 		TAB_ZERG_MISC = new CreativeModeTab("tabzerg_misc") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(ZergModItems.ZERG_CLAW.get());
+				return new ItemStack(ZergModItems.ZERG_CARAPACE.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -29,7 +29,7 @@ public class ZergModTabs {
 		TAB_ZERG_MOBS = new CreativeModeTab("tabzerg_mobs") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(ZergModItems.ZERG_CARAPACE.get());
+				return new ItemStack(ZergModItems.ZERG_CLAW.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

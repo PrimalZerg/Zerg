@@ -59,6 +59,10 @@ public class ZergModItems {
 			() -> new ForgeSpawnEggItem(ZergModEntities.HOSTILE_HYDRALISK, -12969977, -1630690, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> SPINE = REGISTRY.register("spine", () -> new SpineItem());
 	public static final RegistryObject<Item> SPINE_SHOOTER = REGISTRY.register("spine_shooter", () -> new SpineShooterItem());
+	public static final RegistryObject<Item> WILD_ROACH = REGISTRY.register("wild_roach_spawn_egg",
+			() -> new ForgeSpawnEggItem(ZergModEntities.WILD_ROACH, -11844292, -1452831, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+	public static final RegistryObject<Item> FERAL_ROACH = REGISTRY.register("feral_roach_spawn_egg",
+			() -> new ForgeSpawnEggItem(ZergModEntities.FERAL_ROACH, -11844292, -447673, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

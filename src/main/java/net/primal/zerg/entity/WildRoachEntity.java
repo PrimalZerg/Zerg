@@ -18,11 +18,13 @@ import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.OwnerHurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -39,6 +41,7 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
@@ -53,7 +56,7 @@ import net.minecraft.network.protocol.Packet;
 import java.util.List;
 
 @Mod.EventBusSubscriber
-public class WildRoachEntity extends TamableAnimal {
+public class WildRoachEntity extends TamableAnimal implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_ROACH.get(), 20, 1, 2));
@@ -67,6 +70,7 @@ public class WildRoachEntity extends TamableAnimal {
 		super(type, world);
 		xpReward = 3;
 		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZergModItems.ACID_SHOOTER.get()));
 	}
 
 	@Override
@@ -93,6 +97,12 @@ public class WildRoachEntity extends TamableAnimal {
 		this.goalSelector.addGoal(9, new WaterAvoidingRandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(10, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(11, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+			@Override
+			public boolean canContinueToUse() {
+				return this.canUse();
+			}
+		});
 	}
 
 	@Override
@@ -163,6 +173,16 @@ public class WildRoachEntity extends TamableAnimal {
 	}
 
 	@Override
+	public void performRangedAttack(LivingEntity target, float flval) {
+		WildRoachEntityProjectile entityarrow = new WildRoachEntityProjectile(ZergModEntities.WILD_ROACH_PROJECTILE.get(), this, this.level);
+		double d0 = target.getY() + target.getEyeHeight() - 1.1;
+		double d1 = target.getX() - this.getX();
+		double d3 = target.getZ() - this.getZ();
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		level.addFreshEntity(entityarrow);
+	}
+
+	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
 		WildRoachEntity retval = ZergModEntities.WILD_ROACH.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
@@ -171,7 +191,7 @@ public class WildRoachEntity extends TamableAnimal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(ZergModItems.MINERAL_SHARD.get()).contains(stack.getItem());
+		return List.of(ZergModItems.MINERAL_SHARD.get(), ZergModItems.VESPENE_BUBBLE.get()).contains(stack.getItem());
 	}
 
 	public static void init() {

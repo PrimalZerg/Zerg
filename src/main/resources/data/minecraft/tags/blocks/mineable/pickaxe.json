@@ -20,6 +20,8 @@
     "zerg:mineral_block",
     "zerg:medium_zerg_claw",
     "zerg:small_zerg_claw",
-    "zerg:big_zerg_claw"
+    "zerg:big_zerg_claw",
+    "zerg:mineral_ore",
+    "zerg:vespene_geyser"
   ]
 }

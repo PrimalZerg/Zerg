@@ -1,6 +1,7 @@
 
 package net.primal.zerg.entity;
 
+import net.primal.zerg.init.ZergModItems;
 import net.primal.zerg.init.ZergModEntities;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,11 +14,14 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -31,6 +35,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
@@ -39,7 +44,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 @Mod.EventBusSubscriber
-public class FeralRoachEntity extends Monster {
+public class FeralRoachEntity extends Monster implements RangedAttackMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.FERAL_ROACH.get(), 20, 1, 2));
@@ -53,6 +58,8 @@ public class FeralRoachEntity extends Monster {
 		super(type, world);
 		xpReward = 3;
 		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZergModItems.ACID_SHOOTER.get()));
+		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ZergModItems.ACID_SHOOTER.get()));
 	}
 
 	@Override
@@ -77,6 +84,12 @@ public class FeralRoachEntity extends Monster {
 		this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+			@Override
+			public boolean canContinueToUse() {
+				return this.canUse();
+			}
+		});
 	}
 
 	@Override
@@ -99,6 +112,16 @@ public class FeralRoachEntity extends Monster {
 		if (source == DamageSource.FALL)
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void performRangedAttack(LivingEntity target, float flval) {
+		FeralRoachEntityProjectile entityarrow = new FeralRoachEntityProjectile(ZergModEntities.FERAL_ROACH_PROJECTILE.get(), this, this.level);
+		double d0 = target.getY() + target.getEyeHeight() - 1.1;
+		double d1 = target.getX() - this.getX();
+		double d3 = target.getZ() - this.getZ();
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		level.addFreshEntity(entityarrow);
 	}
 
 	public static void init() {

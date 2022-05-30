@@ -6,11 +6,13 @@ package net.primal.zerg.init;
 
 import net.primal.zerg.block.YellowZergCarapaceBlock;
 import net.primal.zerg.block.WhiteZergCarapaceBlock;
+import net.primal.zerg.block.VespeneGeyserBlock;
 import net.primal.zerg.block.SmallZergClawBlock;
 import net.primal.zerg.block.RedZergCarapaceBlock;
 import net.primal.zerg.block.PurpleZergCarapaceBlock;
 import net.primal.zerg.block.PinkZergCarapaceBlock;
 import net.primal.zerg.block.OrangeZergCarapaceBlock;
+import net.primal.zerg.block.MineraloreBlock;
 import net.primal.zerg.block.MineralBlockBlock;
 import net.primal.zerg.block.MediumZergClawBlock;
 import net.primal.zerg.block.MagentaZergCarapaceBlock;
@@ -65,6 +67,8 @@ public class ZergModBlocks {
 	public static final RegistryObject<Block> MEDIUM_ZERG_CLAW = REGISTRY.register("medium_zerg_claw", () -> new MediumZergClawBlock());
 	public static final RegistryObject<Block> SMALL_ZERG_CLAW = REGISTRY.register("small_zerg_claw", () -> new SmallZergClawBlock());
 	public static final RegistryObject<Block> BIG_ZERG_CLAW = REGISTRY.register("big_zerg_claw", () -> new BigZergClawBlock());
+	public static final RegistryObject<Block> MINERAL_ORE = REGISTRY.register("mineral_ore", () -> new MineraloreBlock());
+	public static final RegistryObject<Block> VESPENE_GEYSER = REGISTRY.register("vespene_geyser", () -> new VespeneGeyserBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -73,6 +77,7 @@ public class ZergModBlocks {
 			CreepBlock.registerRenderLayer();
 			MediumZergClawBlock.registerRenderLayer();
 			SmallZergClawBlock.registerRenderLayer();
+			VespeneGeyserBlock.registerRenderLayer();
 		}
 	}
 }

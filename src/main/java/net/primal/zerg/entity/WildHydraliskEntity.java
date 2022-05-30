@@ -191,7 +191,7 @@ public class WildHydraliskEntity extends TamableAnimal implements RangedAttackMo
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return List.of(ZergModItems.MINERAL_SHARD.get()).contains(stack.getItem());
+		return List.of(ZergModItems.MINERAL_SHARD.get(), ZergModItems.VESPENE_BUBBLE.get()).contains(stack.getItem());
 	}
 
 	public static void init() {

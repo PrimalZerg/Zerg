@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "vespene_geyser"
+      },
+      "name": "default"
+    }
+  }
+}

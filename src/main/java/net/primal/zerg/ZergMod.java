@@ -17,7 +17,11 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.primal.zerg.init.ZergModTabs;
+import net.primal.zerg.init.ZergModPotions;
+import net.primal.zerg.init.ZergModParticleTypes;
+import net.primal.zerg.init.ZergModMobEffects;
 import net.primal.zerg.init.ZergModItems;
+import net.primal.zerg.init.ZergModFeatures;
 import net.primal.zerg.init.ZergModEntities;
 import net.primal.zerg.init.ZergModBlocks;
 
@@ -51,6 +55,12 @@ public class ZergMod {
 		ZergModItems.REGISTRY.register(bus);
 		ZergModEntities.REGISTRY.register(bus);
 
+		ZergModFeatures.REGISTRY.register(bus);
+
+		ZergModMobEffects.REGISTRY.register(bus);
+		ZergModPotions.REGISTRY.register(bus);
+
+		ZergModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,

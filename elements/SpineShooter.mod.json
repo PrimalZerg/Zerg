@@ -2,9 +2,9 @@
   "_fv": 28,
   "_type": "rangeditem",
   "definition": {
-    "renderType": 0,
-    "texture": "spine",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "spine_shooter",
+    "customModelName": "spine_shooter:default",
     "name": "Spine Shooter",
     "specialInfo": [],
     "creativeTab": {
@@ -14,8 +14,8 @@
     "ammoItem": {
       "value": "CUSTOM:Spine"
     },
-    "shootConstantly": true,
-    "usageCount": 300,
+    "shootConstantly": false,
+    "usageCount": 1200,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },
@@ -26,12 +26,18 @@
     "bulletPower": 1.0,
     "bulletDamage": 3.0,
     "bulletKnockback": 0,
-    "bulletParticles": true,
+    "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:Spine"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "bulletModel": "Modelspine",
+    "customBulletModelTexture": "spine_entity.png",
+    "onBulletHitsEntity": {
+      "name": "AcidShooterProjectileHitsPlayer"
+    },
+    "onBulletFlyingTick": {
+      "name": "AcidShooterWhileProjectileFlyingTick"
+    }
   }
 }

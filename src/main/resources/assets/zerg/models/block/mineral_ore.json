@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zerg:blocks/mineral_ore",
+    "up": "zerg:blocks/mineral_ore",
+    "north": "zerg:blocks/mineral_ore",
+    "east": "zerg:blocks/mineral_ore",
+    "south": "zerg:blocks/mineral_ore",
+    "west": "zerg:blocks/mineral_ore",
+    "particle": "zerg:blocks/mineral_ore"
+  }
+}

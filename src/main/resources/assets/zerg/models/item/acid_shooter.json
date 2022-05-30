@@ -1,0 +1,7 @@
+{
+  "parent": "zerg:custom/acid_shooter",
+  "textures": {
+    "0": "zerg:blocks/acid_shooter",
+    "particle": "zerg:items/acid_shooter"
+  }
+}

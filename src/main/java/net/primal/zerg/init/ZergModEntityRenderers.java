@@ -7,6 +7,7 @@ package net.primal.zerg.init;
 import net.primal.zerg.client.renderer.ZerglingRenderer;
 import net.primal.zerg.client.renderer.WildRoachRenderer;
 import net.primal.zerg.client.renderer.WildHydraliskRenderer;
+import net.primal.zerg.client.renderer.SpineShooterRenderer;
 import net.primal.zerg.client.renderer.HostileZerglingRenderer;
 import net.primal.zerg.client.renderer.HostileHydraliskRenderer;
 import net.primal.zerg.client.renderer.FeralRoachRenderer;
@@ -28,8 +29,11 @@ public class ZergModEntityRenderers {
 		event.registerEntityRenderer(ZergModEntities.WILD_HYDRALISK_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.HOSTILE_HYDRALISK.get(), HostileHydraliskRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.HOSTILE_HYDRALISK_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.SPINE_SHOOTER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.SPINE_SHOOTER.get(), SpineShooterRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.WILD_ROACH.get(), WildRoachRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.WILD_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.FERAL_ROACH.get(), FeralRoachRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.FERAL_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.ACID_SHOOTER.get(), ThrownItemRenderer::new);
 	}
 }

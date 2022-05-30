@@ -27,10 +27,10 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:AcidShooter"
     },
     "equipmentOffHand": {
-      "value": ""
+      "value": "CUSTOM:AcidShooter"
     },
     "equipmentHelmet": {
       "value": ""
@@ -108,9 +108,9 @@
         "value": "CUSTOM:MineralShard"
       }
     ],
-    "ranged": false,
+    "ranged": true,
     "rangedAttackItem": {
-      "value": ""
+      "value": "CUSTOM:AcidSplash"
     },
     "rangedItemType": "Default item",
     "spawnThisMob": true,

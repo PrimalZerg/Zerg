@@ -20,7 +20,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class SpineShooterItem extends Item {
 	public SpineShooterItem() {
-		super(new Item.Properties().tab(ZergModTabs.TAB_ZERG_MISC).durability(300));
+		super(new Item.Properties().tab(ZergModTabs.TAB_ZERG_MISC).durability(1200));
 	}
 
 	@Override
@@ -40,8 +40,7 @@ public class SpineShooterItem extends Item {
 	}
 
 	@Override
-	public void onUsingTick(ItemStack itemstack, LivingEntity entityLiving, int count) {
-		Level world = entityLiving.level;
+	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entityLiving, int timeLeft) {
 		if (!world.isClientSide() && entityLiving instanceof ServerPlayer entity) {
 			double x = entity.getX();
 			double y = entity.getY();
@@ -77,7 +76,6 @@ public class SpineShooterItem extends Item {
 						}
 					}
 				}
-				entity.releaseUsingItem();
 			}
 		}
 	}

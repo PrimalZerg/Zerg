@@ -1,6 +1,8 @@
 
 package net.primal.zerg.entity;
 
+import net.primal.zerg.procedures.AcidShooterWhileProjectileFlyingTickProcedure;
+import net.primal.zerg.procedures.AcidShooterProjectileHitsPlayerProcedure;
 import net.primal.zerg.init.ZergModItems;
 import net.primal.zerg.init.ZergModEntities;
 
@@ -10,6 +12,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -63,8 +66,15 @@ public class SpineShooterEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		AcidShooterProjectileHitsPlayerProcedure.execute(entityHitResult.getEntity());
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
+		AcidShooterWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
@@ -73,7 +83,7 @@ public class SpineShooterEntity extends AbstractArrow implements ItemSupplier {
 		SpineShooterEntity entityarrow = new SpineShooterEntity(ZergModEntities.SPINE_SHOOTER.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -92,7 +102,7 @@ public class SpineShooterEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(3);
 		entityarrow.setKnockback(0);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1,

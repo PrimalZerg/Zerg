@@ -1,0 +1,8 @@
+{
+  "parent": "zerg:custom/geyser",
+  "textures": {
+    "all": "zerg:blocks/vespene_geyser",
+    "particle": "zerg:blocks/vespene_geyser",
+    "1": "zerg:blocks/vespene_geyser"
+  }
+}

@@ -2,8 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "zerg_claw_block_medium_top",
-        "1": "zerg_claw_block_medium_side"
+        "0": "zerg_claw_block_medium_side",
+        "1": "zerg_claw_block_medium_top"
       },
       "name": "default"
     }

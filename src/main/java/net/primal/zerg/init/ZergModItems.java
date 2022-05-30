@@ -6,9 +6,12 @@ package net.primal.zerg.init;
 
 import net.primal.zerg.item.ZergClawItem;
 import net.primal.zerg.item.ZergCarapaceItem;
+import net.primal.zerg.item.VespeneBubbleItem;
 import net.primal.zerg.item.SpineShooterItem;
 import net.primal.zerg.item.SpineItem;
 import net.primal.zerg.item.MineralShardItem;
+import net.primal.zerg.item.AcidSplashItem;
+import net.primal.zerg.item.AcidShooterItem;
 import net.primal.zerg.ZergMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -47,14 +50,14 @@ public class ZergModItems {
 	public static final RegistryObject<Item> BLOCK_OF_ZERG_CHITIN = block(ZergModBlocks.BLOCK_OF_ZERG_CHITIN, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> CREEP = block(ZergModBlocks.CREEP, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> ZERGLING = REGISTRY.register("zergling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ZergModEntities.ZERGLING, -9551069, -545543, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+			() -> new ForgeSpawnEggItem(ZergModEntities.ZERGLING, -9551069, -1059607, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 	public static final RegistryObject<Item> MEDIUM_ZERG_CLAW = block(ZergModBlocks.MEDIUM_ZERG_CLAW, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> HOSTILE_ZERGLING = REGISTRY.register("hostile_zergling_spawn_egg",
 			() -> new ForgeSpawnEggItem(ZergModEntities.HOSTILE_ZERGLING, -9551069, -65536, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 	public static final RegistryObject<Item> SMALL_ZERG_CLAW = block(ZergModBlocks.SMALL_ZERG_CLAW, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> BIG_ZERG_CLAW = block(ZergModBlocks.BIG_ZERG_CLAW, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> WILD_HYDRALISK = REGISTRY.register("wild_hydralisk_spawn_egg",
-			() -> new ForgeSpawnEggItem(ZergModEntities.WILD_HYDRALISK, -9292010, -2002452, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+			() -> new ForgeSpawnEggItem(ZergModEntities.WILD_HYDRALISK, -9292010, -728330, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 	public static final RegistryObject<Item> HOSTILE_HYDRALISK = REGISTRY.register("hostile_hydralisk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ZergModEntities.HOSTILE_HYDRALISK, -12969977, -1630690, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> SPINE = REGISTRY.register("spine", () -> new SpineItem());
@@ -63,6 +66,11 @@ public class ZergModItems {
 			() -> new ForgeSpawnEggItem(ZergModEntities.WILD_ROACH, -11844292, -1452831, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 	public static final RegistryObject<Item> FERAL_ROACH = REGISTRY.register("feral_roach_spawn_egg",
 			() -> new ForgeSpawnEggItem(ZergModEntities.FERAL_ROACH, -11844292, -447673, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+	public static final RegistryObject<Item> ACID_SPLASH = REGISTRY.register("acid_splash", () -> new AcidSplashItem());
+	public static final RegistryObject<Item> ACID_SHOOTER = REGISTRY.register("acid_shooter", () -> new AcidShooterItem());
+	public static final RegistryObject<Item> MINERAL_ORE = block(ZergModBlocks.MINERAL_ORE, ZergModTabs.TAB_ZERG_MISC);
+	public static final RegistryObject<Item> VESPENE_BUBBLE = REGISTRY.register("vespene_bubble", () -> new VespeneBubbleItem());
+	public static final RegistryObject<Item> VESPENE_GEYSER = block(ZergModBlocks.VESPENE_GEYSER, ZergModTabs.TAB_ZERG_MISC);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

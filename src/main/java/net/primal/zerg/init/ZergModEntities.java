@@ -5,6 +5,7 @@
 package net.primal.zerg.init;
 
 import net.primal.zerg.entity.ZerglingEntity;
+import net.primal.zerg.entity.WildRoachEntityProjectile;
 import net.primal.zerg.entity.WildRoachEntity;
 import net.primal.zerg.entity.WildHydraliskEntityProjectile;
 import net.primal.zerg.entity.WildHydraliskEntity;
@@ -12,7 +13,9 @@ import net.primal.zerg.entity.SpineShooterEntity;
 import net.primal.zerg.entity.HostileZerglingEntity;
 import net.primal.zerg.entity.HostileHydraliskEntityProjectile;
 import net.primal.zerg.entity.HostileHydraliskEntity;
+import net.primal.zerg.entity.FeralRoachEntityProjectile;
 import net.primal.zerg.entity.FeralRoachEntity;
+import net.primal.zerg.entity.AcidShooterEntity;
 import net.primal.zerg.ZergMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -67,11 +70,20 @@ public class ZergModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WildRoachEntity::new)
 
 					.sized(1.3f, 1.5999999999999999f));
+	public static final RegistryObject<EntityType<WildRoachEntityProjectile>> WILD_ROACH_PROJECTILE = register("projectile_wild_roach",
+			EntityType.Builder.<WildRoachEntityProjectile>of(WildRoachEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(WildRoachEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FeralRoachEntity>> FERAL_ROACH = register("feral_roach",
 			EntityType.Builder.<FeralRoachEntity>of(FeralRoachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FeralRoachEntity::new)
 
 					.sized(1.3f, 1.5999999999999999f));
+	public static final RegistryObject<EntityType<FeralRoachEntityProjectile>> FERAL_ROACH_PROJECTILE = register("projectile_feral_roach",
+			EntityType.Builder.<FeralRoachEntityProjectile>of(FeralRoachEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(FeralRoachEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AcidShooterEntity>> ACID_SHOOTER = register("projectile_acid_shooter",
+			EntityType.Builder.<AcidShooterEntity>of(AcidShooterEntity::new, MobCategory.MISC).setCustomClientFactory(AcidShooterEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

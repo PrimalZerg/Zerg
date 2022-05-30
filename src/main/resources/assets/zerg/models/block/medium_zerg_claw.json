@@ -1,5 +1,5 @@
 {
-  "parent": "zerg:custom/zerg_claw_block_medium",
+  "parent": "zerg:custom/medium_zerg_claw_block",
   "textures": {
     "all": "zerg:blocks/zerg_claw_block_medium_side",
     "particle": "zerg:blocks/zerg_claw_block_medium_side",

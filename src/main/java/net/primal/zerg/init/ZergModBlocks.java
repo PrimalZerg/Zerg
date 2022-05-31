@@ -21,6 +21,7 @@ import net.primal.zerg.block.LightGrayZergCarapaceBlock;
 import net.primal.zerg.block.LightBlueZergCarapaceBlock;
 import net.primal.zerg.block.GreenZergCarapaceBlock;
 import net.primal.zerg.block.GrayZergCarapaceBlock;
+import net.primal.zerg.block.DeepslatemineraloreBlock;
 import net.primal.zerg.block.CyanZergCarapaceBlock;
 import net.primal.zerg.block.CreepBlock;
 import net.primal.zerg.block.BrownZergCarapaceBlock;
@@ -69,6 +70,7 @@ public class ZergModBlocks {
 	public static final RegistryObject<Block> BIG_ZERG_CLAW = REGISTRY.register("big_zerg_claw", () -> new BigZergClawBlock());
 	public static final RegistryObject<Block> MINERAL_ORE = REGISTRY.register("mineral_ore", () -> new MineraloreBlock());
 	public static final RegistryObject<Block> VESPENE_GEYSER = REGISTRY.register("vespene_geyser", () -> new VespeneGeyserBlock());
+	public static final RegistryObject<Block> DEEPSLATEMINERALORE = REGISTRY.register("deepslatemineralore", () -> new DeepslatemineraloreBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

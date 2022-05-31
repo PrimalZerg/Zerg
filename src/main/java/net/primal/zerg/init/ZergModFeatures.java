@@ -5,6 +5,7 @@
 package net.primal.zerg.init;
 
 import net.primal.zerg.world.features.ores.MineraloreFeature;
+import net.primal.zerg.world.features.ores.DeepslatemineraloreFeature;
 import net.primal.zerg.ZergMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -31,6 +32,9 @@ public class ZergModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> MINERAL_ORE = register("mineral_ore", MineraloreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MineraloreFeature.GENERATE_BIOMES, MineraloreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPSLATEMINERALORE = register("deepslatemineralore", DeepslatemineraloreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepslatemineraloreFeature.GENERATE_BIOMES,
+					DeepslatemineraloreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

@@ -59,7 +59,8 @@ public class ZergModItems {
 	public static final RegistryObject<Item> WILD_HYDRALISK = REGISTRY.register("wild_hydralisk_spawn_egg",
 			() -> new ForgeSpawnEggItem(ZergModEntities.WILD_HYDRALISK, -9292010, -728330, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 	public static final RegistryObject<Item> HOSTILE_HYDRALISK = REGISTRY.register("hostile_hydralisk_spawn_egg",
-			() -> new ForgeSpawnEggItem(ZergModEntities.HOSTILE_HYDRALISK, -12969977, -1630690, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(ZergModEntities.HOSTILE_HYDRALISK, -12969977, -1630690,
+					new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
 	public static final RegistryObject<Item> SPINE = REGISTRY.register("spine", () -> new SpineItem());
 	public static final RegistryObject<Item> SPINE_SHOOTER = REGISTRY.register("spine_shooter", () -> new SpineShooterItem());
 	public static final RegistryObject<Item> WILD_ROACH = REGISTRY.register("wild_roach_spawn_egg",
@@ -71,6 +72,7 @@ public class ZergModItems {
 	public static final RegistryObject<Item> MINERAL_ORE = block(ZergModBlocks.MINERAL_ORE, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> VESPENE_BUBBLE = REGISTRY.register("vespene_bubble", () -> new VespeneBubbleItem());
 	public static final RegistryObject<Item> VESPENE_GEYSER = block(ZergModBlocks.VESPENE_GEYSER, ZergModTabs.TAB_ZERG_MISC);
+	public static final RegistryObject<Item> DEEPSLATEMINERALORE = block(ZergModBlocks.DEEPSLATEMINERALORE, ZergModTabs.TAB_ZERG_MISC);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

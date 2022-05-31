@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
@@ -24,7 +24,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import java.util.List;
 import java.util.Collections;
 
-public class CreepBlock extends Block {
+public class CreepBlock extends FallingBlock {
 	public CreepBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.PODZOL).sound(SoundType.SLIME_BLOCK).strength(1f, 10f).noCollission()
 				.friction(1f).speedFactor(1.3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -43,7 +43,7 @@ public class CreepBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
-		return box(0, -1, 0, 16, 3, 16);
+		return box(0, 0, 0, 16, 1, 16);
 	}
 
 	@Override

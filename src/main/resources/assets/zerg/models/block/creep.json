@@ -3,6 +3,6 @@
   "textures": {
     "all": "zerg:blocks/creep",
     "particle": "zerg:blocks/creep",
-    "0": "zerg:blocks/creep"
+    "1": "zerg:blocks/creep"
   }
 }

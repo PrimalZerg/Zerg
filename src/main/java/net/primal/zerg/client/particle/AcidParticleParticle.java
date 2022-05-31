@@ -43,7 +43,7 @@ public class AcidParticleParticle extends TextureSheetParticle {
 		this.quadSize *= 0.3f;
 		this.lifetime = 7;
 		this.gravity = 0.5f;
-		this.hasPhysics = true;
+		this.hasPhysics = false;
 		this.xd = vx * 0.1;
 		this.yd = vy * 0.1;
 		this.zd = vz * 0.1;

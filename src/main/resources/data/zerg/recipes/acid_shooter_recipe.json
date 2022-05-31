@@ -10,13 +10,13 @@
       "item": "minecraft:iron_ingot"
     },
     "3": {
-      "tag": "category/tag/glass"
+      "item": "minecraft:glass"
     },
     "4": {
       "item": "zerg:vespene_bubble"
     },
     "5": {
-      "tag": "category/tag/glass"
+      "item": "minecraft:glass"
     },
     "7": {
       "item": "minecraft:iron_ingot"

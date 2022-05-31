@@ -599,6 +599,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "vespene_geyser"
+    },
+    {
+      "name": "Deepslatemineralore",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslatemineralore"
     }
   ],
   "variable_elements": [],
@@ -618,6 +626,7 @@
       "block.zerg.black_zerg_carapace": "BLack Zerg Carapace",
       "block.zerg.cyan_zerg_carapace": "Cyan Zerg Carapace",
       "block.zerg.medium_zerg_claw": "Medium Zerg Claw",
+      "block.zerg.deepslatemineralore": "Mineral Ore",
       "block.zerg.white_zerg_carapace": "White Zerg Carapace",
       "item.minecraft.tipped_arrow.effect.acid_potion": "Arrow of Acid",
       "item.zerg.hostile_zergling_spawn_egg": "Feral Zergling Spawn Egg",
@@ -626,8 +635,8 @@
       "effect.zerg.acid": "Acid",
       "block.zerg.mineral_ore": "Mineral Ore",
       "block.zerg.big_zerg_claw": "Big Zerg Claw",
-      "item.zerg.hostile_hydralisk_spawn_egg": "Feral Hydralisk Spawn Egg",
       "item.zerg.vespene_bubble": "Vespene Bubble",
+      "item.zerg.hostile_hydralisk_spawn_egg": "Feral Hydralisk Spawn Egg",
       "block.zerg.brown_zerg_carapace": "Brown Zerg Carapace",
       "block.zerg.lime_zerg_carapace": "Lime Zerg Carapace",
       "item.zerg.spine_shooter": "Spine Shooter",

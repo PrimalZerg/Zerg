@@ -67,7 +67,7 @@ public class VespeneGeyserBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return Shapes.or(box(0, 0, 0, 8, 16, 16), box(1, 8, 1, 15, 16, 15)).move(offset.x, offset.y, offset.z);
+		return Shapes.or(box(0, 0, 0, 16, 8, 16), box(1, 8, 1, 15, 16, 15)).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

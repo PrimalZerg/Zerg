@@ -10,6 +10,7 @@ import net.primal.zerg.item.VespeneBubbleItem;
 import net.primal.zerg.item.SpineShooterItem;
 import net.primal.zerg.item.SpineItem;
 import net.primal.zerg.item.MineralShardItem;
+import net.primal.zerg.item.EmptyVespeneBubbleItem;
 import net.primal.zerg.item.AcidSplashItem;
 import net.primal.zerg.item.AcidShooterItem;
 import net.primal.zerg.ZergMod;
@@ -73,6 +74,7 @@ public class ZergModItems {
 	public static final RegistryObject<Item> VESPENE_BUBBLE = REGISTRY.register("vespene_bubble", () -> new VespeneBubbleItem());
 	public static final RegistryObject<Item> VESPENE_GEYSER = block(ZergModBlocks.VESPENE_GEYSER, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> DEEPSLATEMINERALORE = block(ZergModBlocks.DEEPSLATEMINERALORE, ZergModTabs.TAB_ZERG_MISC);
+	public static final RegistryObject<Item> EMPTY_VESPENE_BUBBLE = REGISTRY.register("empty_vespene_bubble", () -> new EmptyVespeneBubbleItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

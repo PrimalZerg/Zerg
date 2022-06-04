@@ -5,20 +5,25 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
+
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class AcidActiveTickConditionProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		execute(event);
+		execute(event, event.getEntityLiving());
 	}
 
-	public static boolean execute() {
-		return execute(null);
+	public static boolean execute(Entity entity) {
+		return execute(null, entity);
 	}
 
-	private static boolean execute(@Nullable Event event) {
+	private static boolean execute(@Nullable Event event, Entity entity) {
+		if (entity == null)
+			return false;
 		double baseRate = 0;
 		double rateWithAmplifier = 0;
 		baseRate = 50;
@@ -26,6 +31,7 @@ public class AcidActiveTickConditionProcedure {
 		if (Math.floor(rateWithAmplifier) > 0) {
 			return 10 % Math.floor(rateWithAmplifier) == 0;
 		}
+		entity.hurt(DamageSource.MAGIC, 1);
 		return true;
 	}
 }

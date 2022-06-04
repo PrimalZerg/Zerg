@@ -10,6 +10,7 @@ import net.primal.zerg.entity.WildRoachEntity;
 import net.primal.zerg.entity.WildHydraliskEntityProjectile;
 import net.primal.zerg.entity.WildHydraliskEntity;
 import net.primal.zerg.entity.SpineShooterEntity;
+import net.primal.zerg.entity.LarvaEntity;
 import net.primal.zerg.entity.HostileZerglingEntity;
 import net.primal.zerg.entity.HostileHydraliskEntityProjectile;
 import net.primal.zerg.entity.HostileHydraliskEntity;
@@ -33,7 +34,7 @@ import net.minecraft.world.entity.Entity;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ZergModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, ZergMod.MODID);
-	public static final RegistryObject<EntityType<ZerglingEntity>> ZERGLING = register("zergling",
+	public static final RegistryObject<EntityType<ZerglingEntity>> WILD_ZERGLING = register("wild_zergling",
 			EntityType.Builder.<ZerglingEntity>of(ZerglingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(ZerglingEntity::new)
 
@@ -84,6 +85,11 @@ public class ZergModEntities {
 	public static final RegistryObject<EntityType<AcidShooterEntity>> ACID_SHOOTER = register("projectile_acid_shooter",
 			EntityType.Builder.<AcidShooterEntity>of(AcidShooterEntity::new, MobCategory.MISC).setCustomClientFactory(AcidShooterEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LarvaEntity>> LARVA = register("larva",
+			EntityType.Builder.<LarvaEntity>of(LarvaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(2)
+					.setUpdateInterval(3).setCustomClientFactory(LarvaEntity::new)
+
+					.sized(0.3f, 0.3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -98,16 +104,18 @@ public class ZergModEntities {
 			HostileHydraliskEntity.init();
 			WildRoachEntity.init();
 			FeralRoachEntity.init();
+			LarvaEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(ZERGLING.get(), ZerglingEntity.createAttributes().build());
+		event.put(WILD_ZERGLING.get(), ZerglingEntity.createAttributes().build());
 		event.put(HOSTILE_ZERGLING.get(), HostileZerglingEntity.createAttributes().build());
 		event.put(WILD_HYDRALISK.get(), WildHydraliskEntity.createAttributes().build());
 		event.put(HOSTILE_HYDRALISK.get(), HostileHydraliskEntity.createAttributes().build());
 		event.put(WILD_ROACH.get(), WildRoachEntity.createAttributes().build());
 		event.put(FERAL_ROACH.get(), FeralRoachEntity.createAttributes().build());
+		event.put(LARVA.get(), LarvaEntity.createAttributes().build());
 	}
 }

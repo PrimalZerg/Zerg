@@ -7,6 +7,7 @@ package net.primal.zerg.init;
 import net.primal.zerg.block.YellowZergCarapaceBlock;
 import net.primal.zerg.block.WhiteZergCarapaceBlock;
 import net.primal.zerg.block.VespeneGeyserBlock;
+import net.primal.zerg.block.StorageCocoonBlock;
 import net.primal.zerg.block.SmallZergClawBlock;
 import net.primal.zerg.block.RedZergCarapaceBlock;
 import net.primal.zerg.block.PurpleZergCarapaceBlock;
@@ -23,12 +24,14 @@ import net.primal.zerg.block.GreenZergCarapaceBlock;
 import net.primal.zerg.block.GrayZergCarapaceBlock;
 import net.primal.zerg.block.DeepslatemineraloreBlock;
 import net.primal.zerg.block.CyanZergCarapaceBlock;
+import net.primal.zerg.block.CreepTumorBlock;
 import net.primal.zerg.block.CreepBlock;
 import net.primal.zerg.block.BrownZergCarapaceBlock;
 import net.primal.zerg.block.BlueZergCarapaceBlock;
 import net.primal.zerg.block.BlockOfZergChitinBlock;
 import net.primal.zerg.block.BlackZergCarapaceBlock;
 import net.primal.zerg.block.BigZergClawBlock;
+import net.primal.zerg.block.AcidFluidBlock;
 import net.primal.zerg.ZergMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -71,6 +74,9 @@ public class ZergModBlocks {
 	public static final RegistryObject<Block> MINERAL_ORE = REGISTRY.register("mineral_ore", () -> new MineraloreBlock());
 	public static final RegistryObject<Block> VESPENE_GEYSER = REGISTRY.register("vespene_geyser", () -> new VespeneGeyserBlock());
 	public static final RegistryObject<Block> DEEPSLATEMINERALORE = REGISTRY.register("deepslatemineralore", () -> new DeepslatemineraloreBlock());
+	public static final RegistryObject<Block> CREEP_TUMOR = REGISTRY.register("creep_tumor", () -> new CreepTumorBlock());
+	public static final RegistryObject<Block> ACID_FLUID = REGISTRY.register("acid_fluid", () -> new AcidFluidBlock());
+	public static final RegistryObject<Block> STORAGE_COCOON = REGISTRY.register("storage_cocoon", () -> new StorageCocoonBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -80,6 +86,8 @@ public class ZergModBlocks {
 			MediumZergClawBlock.registerRenderLayer();
 			SmallZergClawBlock.registerRenderLayer();
 			VespeneGeyserBlock.registerRenderLayer();
+			CreepTumorBlock.registerRenderLayer();
+			StorageCocoonBlock.registerRenderLayer();
 		}
 	}
 }

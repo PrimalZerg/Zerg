@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "zerg:items/vespene"
+    "layer0": "zerg:items/vespene_empty"
   }
 }

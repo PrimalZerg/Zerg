@@ -11,6 +11,6 @@ public class AcidShooterProjectileHitsPlayerProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(ZergModMobEffects.ACID.get(), 60, 1));
+			_entity.addEffect(new MobEffectInstance(ZergModMobEffects.ACID_ICON.get(), 60, 1));
 	}
 }

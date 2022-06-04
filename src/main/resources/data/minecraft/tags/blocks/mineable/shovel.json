@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "zerg:creep",
+    "zerg:creep_tumor"
+  ]
+}

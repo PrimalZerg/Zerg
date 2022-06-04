@@ -1,0 +1,8 @@
+{
+  "parent": "zerg:custom/cocoon",
+  "textures": {
+    "all": "zerg:blocks/cocoon",
+    "particle": "zerg:blocks/cocoon",
+    "0": "zerg:blocks/cocoon"
+  }
+}

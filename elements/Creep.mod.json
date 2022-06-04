@@ -41,7 +41,7 @@
     "creativeTab": {
       "value": "CUSTOM:ZergMisc"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },

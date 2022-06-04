@@ -198,7 +198,7 @@
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "zergling"
+      "registry_name": "wild_zergling"
     },
     {
       "name": "BlockOfMineral",
@@ -482,7 +482,7 @@
       "sortid": 63,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "acid"
+      "registry_name": "acid_icon"
     },
     {
       "name": "AcidSplash",
@@ -647,6 +647,57 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "empty_vespene_bubble"
+    },
+    {
+      "name": "VespineBubbleRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vespine_bubble_recipe"
+    },
+    {
+      "name": "CreepTumor",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creep_tumor"
+    },
+    {
+      "name": "AcidFluid",
+      "type": "fluid",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acid_fluid",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "StorageCocoon",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_cocoon"
+    },
+    {
+      "name": "Larva",
+      "type": "livingentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "larva"
+    },
+    {
+      "name": "Mineraldrops",
+      "type": "loottable",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mineraldrops"
     }
   ],
   "variable_elements": [],
@@ -655,14 +706,17 @@
     "en_us": {
       "block.zerg.magenta_zerg_carapace": "Magenta Zerg Carapace",
       "itemGroup.tabzerg_misc": "Zerg Misc",
+      "block.zerg.storage_cocoon": "Storage Cocoon",
       "item.zerg.spine": "Spine",
       "block.zerg.blue_zerg_carapace": "BLue Zerg Carapace",
+      "block.zerg.creep_tumor": "Creep Tumor",
       "itemGroup.tabzerg_mobs": "Zerg Mobs",
       "block.zerg.orange_zerg_carapace": "Orange Zerg Carapace",
       "block.zerg.creep": "Creep",
+      "item.zerg.larva_spawn_egg": "Larva Spawn Egg",
       "block.zerg.pink_zerg_carapace": "Pink Zerg Carapace",
-      "entity.zerg.zergling": "WildZergling",
       "block.zerg.light_blue_zerg_carapace": "Light BLue Zerg Carapace",
+      "item.zerg.wild_zergling_spawn_egg": "Wild Zergling Spawn Egg",
       "block.zerg.black_zerg_carapace": "BLack Zerg Carapace",
       "block.zerg.cyan_zerg_carapace": "Cyan Zerg Carapace",
       "block.zerg.medium_zerg_claw": "Medium Zerg Claw",
@@ -670,14 +724,15 @@
       "block.zerg.white_zerg_carapace": "White Zerg Carapace",
       "item.minecraft.tipped_arrow.effect.acid_potion": "Arrow of Acid",
       "item.zerg.hostile_zergling_spawn_egg": "Feral Zergling Spawn Egg",
+      "block.zerg.acid_fluid": "Acid",
       "item.zerg.wild_hydralisk_spawn_egg": "Wild Hydralisk Spawn Egg",
       "item.zerg.empty_vespene_bubble": "Vespene Bubble",
       "item.minecraft.potion.effect.acid_potion": "Potion of Acid",
-      "effect.zerg.acid": "Acid",
       "block.zerg.mineral_ore": "Mineral Ore",
       "block.zerg.big_zerg_claw": "Big Zerg Claw",
       "item.zerg.hostile_hydralisk_spawn_egg": "Feral Hydralisk Spawn Egg",
       "item.zerg.vespene_bubble": "Vespene Bubble",
+      "entity.zerg.larva": "Larva",
       "block.zerg.brown_zerg_carapace": "Brown Zerg Carapace",
       "block.zerg.lime_zerg_carapace": "Lime Zerg Carapace",
       "item.zerg.spine_shooter": "Spine Shooter",
@@ -687,20 +742,23 @@
       "block.zerg.green_zerg_carapace": "Green Zerg Carapace",
       "block.zerg.block_of_zerg_chitin": "Block Of Zerg Chitin",
       "block.zerg.light_gray_zerg_carapace": "Light Gray Zerg Carapace",
+      "fluid.zerg.acid_fluid": "Acid",
       "item.zerg.wild_roach_spawn_egg": "Wild Roach Spawn Egg",
       "block.zerg.yellow_zerg_carapace": "Yellow Zerg Carapace",
       "item.minecraft.splash_potion.effect.acid_potion": "Splash Potion of Acid",
       "block.zerg.gray_zerg_carapace": "Gray Zerg Carapace",
-      "item.zerg.zergling_spawn_egg": "WildZergling Spawn Egg",
       "item.zerg.feral_roach_spawn_egg": "Wild Roach Spawn Egg",
       "item.zerg.mineral_shard": "Mineral Shard",
+      "effect.zerg.acid_icon": "Acid",
       "item.zerg.acid_shooter": "Acid Shooter",
+      "item.zerg.acid_fluid_bucket": "Acid Fluid Bucket",
       "item.zerg.acid_splash": "Acid Splash",
       "block.zerg.red_zerg_carapace": "Red Zerg Carapace",
       "entity.zerg.wild_hydralisk": "Wild Hydralisk",
       "item.zerg.zerg_carapace": "Zerg Carapace",
       "item.zerg.zerg_claw": "Zerg Claw",
       "entity.zerg.hostile_hydralisk": "Feral Hydralisk",
+      "entity.zerg.wild_zergling": "Wild Zergling",
       "entity.zerg.wild_roach": "Wild Roach",
       "item.minecraft.lingering_potion.effect.acid_potion": "Lingering Potion of Acid",
       "entity.zerg.feral_roach": "Wild Roach",

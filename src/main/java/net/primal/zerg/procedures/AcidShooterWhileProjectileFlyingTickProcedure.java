@@ -17,7 +17,7 @@ public class AcidShooterWhileProjectileFlyingTickProcedure {
 		double fireHeight = 0;
 		BlockState clickedBlock = Blocks.AIR.defaultBlockState();
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ZergModParticleTypes.ACID_PARTICLE.get()), (x + 0.1), (y + 0.2), (z - 0.1), 5, 0.1, 0.1, 0.1,
+			_level.sendParticles((SimpleParticleType) (ZergModParticleTypes.ACID_PARTICLE.get()), (x + 0.1), (y + 0.2), (z - 0.1), 30, 0.1, 0.1, 0.1,
 					0.1);
 	}
 }

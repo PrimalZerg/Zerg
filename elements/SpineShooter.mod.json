@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 1200,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "entity.shulker.shoot"
     },
     "hasGlow": false,
     "animation": "none",

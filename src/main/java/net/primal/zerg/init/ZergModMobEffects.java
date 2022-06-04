@@ -15,5 +15,5 @@ import net.minecraft.world.effect.MobEffect;
 
 public class ZergModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, ZergMod.MODID);
-	public static final RegistryObject<MobEffect> ACID = REGISTRY.register("acid", () -> new AcidMobEffect());
+	public static final RegistryObject<MobEffect> ACID_ICON = REGISTRY.register("acid_icon", () -> new AcidMobEffect());
 }

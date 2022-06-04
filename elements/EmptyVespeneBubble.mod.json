@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "vespene",
+    "texture": "vespene_empty",
     "customModelName": "Normal",
     "name": "Vespene Bubble",
     "rarity": "COMMON",

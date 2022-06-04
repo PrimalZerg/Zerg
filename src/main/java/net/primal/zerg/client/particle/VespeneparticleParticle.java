@@ -36,14 +36,14 @@ public class VespeneparticleParticle extends TextureSheetParticle {
 	protected VespeneparticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.2f, 0.2f);
-		this.quadSize *= 0.8f;
+		this.setSize(2f, 2f);
+		this.quadSize *= 2f;
 		this.lifetime = 7;
 		this.gravity = -0.3f;
 		this.hasPhysics = true;
-		this.xd = vx * 0.4;
-		this.yd = vy * 0.4;
-		this.zd = vz * 0.4;
+		this.xd = vx * 0.2;
+		this.yd = vy * 0.2;
+		this.zd = vz * 0.2;
 		this.pickSprite(spriteSet);
 	}
 

@@ -2,12 +2,10 @@
 package net.primal.zerg.item;
 
 import net.primal.zerg.init.ZergModTabs;
-import net.primal.zerg.init.ZergModItems;
 import net.primal.zerg.entity.AcidShooterEntity;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -31,7 +29,7 @@ public class AcidShooterItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.NONE;
+		return UseAnim.CROSSBOW;
 	}
 
 	@Override
@@ -47,36 +45,9 @@ public class AcidShooterItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == ZergModItems.ACID_SPLASH.get());
-				if (stack == ItemStack.EMPTY) {
-					for (int i = 0; i < entity.getInventory().items.size(); i++) {
-						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == ZergModItems.ACID_SPLASH.get()) {
-							stack = teststack;
-							break;
-						}
-					}
-				}
-				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					AcidShooterEntity entityarrow = AcidShooterEntity.shoot(world, entity, world.getRandom(), 2f, 5, 0);
-					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-					if (entity.getAbilities().instabuild) {
-						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
-					} else {
-						if (new ItemStack(ZergModItems.ACID_SPLASH.get()).isDamageableItem()) {
-							if (stack.hurt(1, world.getRandom(), entity)) {
-								stack.shrink(1);
-								stack.setDamageValue(0);
-								if (stack.isEmpty())
-									entity.getInventory().removeItem(stack);
-							}
-						} else {
-							stack.shrink(1);
-							if (stack.isEmpty())
-								entity.getInventory().removeItem(stack);
-						}
-					}
-				}
+				AcidShooterEntity entityarrow = AcidShooterEntity.shoot(world, entity, world.getRandom(), 2f, 2, 0);
+				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				entity.releaseUsingItem();
 			}
 		}

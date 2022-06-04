@@ -55,11 +55,11 @@ import java.util.List;
 public class ZerglingEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.ZERGLING.get(), 30, 2, 6));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_ZERGLING.get(), 30, 2, 6));
 	}
 
 	public ZerglingEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(ZergModEntities.ZERGLING.get(), world);
+		this(ZergModEntities.WILD_ZERGLING.get(), world);
 	}
 
 	public ZerglingEntity(EntityType<ZerglingEntity> type, Level world) {
@@ -162,7 +162,7 @@ public class ZerglingEntity extends TamableAnimal {
 
 	@Override
 	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		ZerglingEntity retval = ZergModEntities.ZERGLING.get().create(serverWorld);
+		ZerglingEntity retval = ZergModEntities.WILD_ZERGLING.get().create(serverWorld);
 		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null, null);
 		return retval;
 	}
@@ -173,7 +173,7 @@ public class ZerglingEntity extends TamableAnimal {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(ZergModEntities.ZERGLING.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(ZergModEntities.WILD_ZERGLING.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}

@@ -16,5 +16,5 @@ import net.minecraft.world.effect.MobEffectInstance;
 public class ZergModPotions {
 	public static final DeferredRegister<Potion> REGISTRY = DeferredRegister.create(ForgeRegistries.POTIONS, ZergMod.MODID);
 	public static final RegistryObject<Potion> ACID_POTION = REGISTRY.register("acid_potion",
-			() -> new Potion(new MobEffectInstance(ZergModMobEffects.ACID.get(), 3600, 0, false, false)));
+			() -> new Potion(new MobEffectInstance(ZergModMobEffects.ACID_ICON.get(), 3600, 0, false, false)));
 }

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "creep_tumor"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -16,7 +16,9 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -26,8 +28,9 @@ import java.util.Collections;
 
 public class CreepBlock extends FallingBlock {
 	public CreepBlock() {
-		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.PODZOL).sound(SoundType.SLIME_BLOCK).strength(1f, 10f).noCollission()
-				.friction(1f).speedFactor(1.3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.PODZOL).sound(SoundType.SLIME_BLOCK).strength(1f, 10f)
+				.requiresCorrectToolForDrops().noCollission().friction(1f).speedFactor(1.3f).noOcclusion()
+				.isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -44,6 +47,13 @@ public class CreepBlock extends FallingBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return box(0, 0, 0, 16, 1, 16);
+	}
+
+	@Override
+	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
+		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+			return tieredItem.getTier().getLevel() >= 1;
+		return false;
 	}
 
 	@Override

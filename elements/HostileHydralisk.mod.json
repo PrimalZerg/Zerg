@@ -27,10 +27,10 @@
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:SpineShooter"
     },
     "equipmentOffHand": {
-      "value": ""
+      "value": "CUSTOM:SpineShooter"
     },
     "equipmentHelmet": {
       "value": ""

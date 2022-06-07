@@ -31,7 +31,7 @@ public class SpineShooterItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.NONE;
+		return UseAnim.BOW;
 	}
 
 	@Override

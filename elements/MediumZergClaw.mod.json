@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "medium_zerg_claw_block:default",
+    "customModelName": "medium_zerg_claw:default",
     "rotationMode": 5,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

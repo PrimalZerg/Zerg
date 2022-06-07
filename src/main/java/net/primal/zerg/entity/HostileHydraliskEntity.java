@@ -33,6 +33,7 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
@@ -56,6 +57,8 @@ public class HostileHydraliskEntity extends Monster implements RangedAttackMob {
 		super(type, world);
 		xpReward = 5;
 		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZergModItems.SPINE_SHOOTER.get()));
+		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ZergModItems.SPINE_SHOOTER.get()));
 	}
 
 	@Override

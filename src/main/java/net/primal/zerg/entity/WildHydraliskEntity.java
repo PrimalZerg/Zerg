@@ -39,6 +39,7 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
@@ -67,6 +68,7 @@ public class WildHydraliskEntity extends TamableAnimal implements RangedAttackMo
 		super(type, world);
 		xpReward = 3;
 		setNoAi(false);
+		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ZergModItems.SPINE_SHOOTER.get()));
 	}
 
 	@Override

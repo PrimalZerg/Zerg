@@ -114,7 +114,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "Cooconstorage",
     "openGUIOnRightClick": true,
     "inventorySize": 27,
     "inventoryStackSize": 64,

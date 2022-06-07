@@ -38,7 +38,7 @@ public class VespeneparticleParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(2f, 2f);
 		this.quadSize *= 2f;
-		this.lifetime = 7;
+		this.lifetime = 10;
 		this.gravity = -0.3f;
 		this.hasPhysics = true;
 		this.xd = vx * 0.2;

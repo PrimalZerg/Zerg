@@ -42,6 +42,9 @@
     "colorOnMap": "DEFAULT",
     "frequencyOnChunks": 1,
     "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "restrictionBiomes": [],
+    "onEntityCollides": {
+      "name": "AcidShooterProjectileHitsPlayer"
+    }
   }
 }

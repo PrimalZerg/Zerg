@@ -472,8 +472,12 @@
       "locked_code": false,
       "registry_name": "acid_active_tick_condition",
       "metadata": {
-        "return_type": "logic",
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -698,6 +702,90 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mineraldrops"
+    },
+    {
+      "name": "FeralZerglingDrops",
+      "type": "loottable",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feral_zergling_drops"
+    },
+    {
+      "name": "Cooconstorage",
+      "type": "gui",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooconstorage"
+    },
+    {
+      "name": "DeepslateMineralDrops",
+      "type": "loottable",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mineral_drops"
+    },
+    {
+      "name": "WildRoachDrops",
+      "type": "loottable",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_roach_drops"
+    },
+    {
+      "name": "FeralRoachDrops",
+      "type": "loottable",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feral_roach_drops"
+    },
+    {
+      "name": "WildHydraliskDrops",
+      "type": "loottable",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wild_hydralisk_drops"
+    },
+    {
+      "name": "HostileHydraliskDrops",
+      "type": "loottable",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hostile_hydralisk_drops"
+    },
+    {
+      "name": "SpineShooterWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spine_shooter_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

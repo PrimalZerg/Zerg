@@ -20,7 +20,7 @@
       "value": "entity.blaze.shoot"
     },
     "hasGlow": false,
-    "animation": "crossbow",
+    "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 1.0,
     "bulletPower": 2.0,

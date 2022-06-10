@@ -1,15 +1,16 @@
 
 package net.primal.zerg.item;
 
+import net.primal.zerg.init.ZergModTabs;
+
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 
 public class EmptyVespeneBubbleItem extends Item {
 	public EmptyVespeneBubbleItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(ZergModTabs.TAB_ZERG_MISC).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

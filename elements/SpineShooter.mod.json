@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 1,
-    "texture": "spine_shooter",
+    "texture": "spine_shooter_item",
     "customModelName": "spine_shooter:default",
     "name": "Spine Shooter",
     "specialInfo": [],

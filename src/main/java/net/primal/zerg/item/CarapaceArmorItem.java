@@ -4,7 +4,6 @@ package net.primal.zerg.item;
 import net.primal.zerg.procedures.CarapaceArmorBootsTickEventProcedure;
 import net.primal.zerg.init.ZergModTabs;
 import net.primal.zerg.init.ZergModItems;
-import net.primal.zerg.client.model.Modelarmor_leggings;
 import net.primal.zerg.client.model.Modelarmor;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -86,7 +85,7 @@ public abstract class CarapaceArmorItem extends ArmorItem {
 				@Override
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Head, "hat",
+							Map.of("head", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Body, "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
@@ -118,7 +117,7 @@ public abstract class CarapaceArmorItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body",
-							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Body2, "left_arm",
+							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Body, "left_arm",
 							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).LeftArm, "right_arm",
 							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).RightArm, "head",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
@@ -150,10 +149,9 @@ public abstract class CarapaceArmorItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("left_leg",
-							new Modelarmor_leggings(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor_leggings.LAYER_LOCATION)).LeftLeg,
-							"right_leg",
-							new Modelarmor_leggings(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor_leggings.LAYER_LOCATION)).RightLeg,
-							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).LeftLeg2, "right_leg",
+							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).RightLeg2, "head",
+							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
@@ -168,7 +166,7 @@ public abstract class CarapaceArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "zerg:textures/models/armor/carapacearmor_layer_2.png";
+			return "zerg:textures/carapace_leggings.png";
 		}
 	}
 

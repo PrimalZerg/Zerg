@@ -16,7 +16,7 @@
       "value": "CUSTOM:AcidParticle"
     },
     "flowStrength": 1.0,
-    "luminosity": 0,
+    "luminosity": 2,
     "density": 1000,
     "viscosity": 1000,
     "isGas": false,
@@ -28,18 +28,18 @@
       "value": "CUSTOM:ZergMisc"
     },
     "emptySound": {
-      "value": ""
+      "value": "item.bucket.empty"
     },
     "rarity": "COMMON",
     "specialInfo": [],
     "resistance": 100.0,
-    "luminance": 0,
-    "lightOpacity": 0,
+    "luminance": 1,
+    "lightOpacity": 5,
     "emissiveRendering": false,
     "tickRate": 10,
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "LIME",
     "frequencyOnChunks": 1,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

@@ -30,15 +30,6 @@
         "My": 2.0,
         "Mz": 16.0,
         "subtract": false
-      },
-      {
-        "mx": 1.0,
-        "my": 0.0,
-        "mz": 3.0,
-        "Mx": 9.0,
-        "My": 3.75,
-        "Mz": 7.0,
-        "subtract": false
       }
     ],
     "name": "Creep Tumor",

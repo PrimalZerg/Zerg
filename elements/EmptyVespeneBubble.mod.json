@@ -8,7 +8,7 @@
     "name": "Vespene Bubble",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:ZergMisc"
     },
     "stackSize": 64,
     "enchantability": 0,

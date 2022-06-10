@@ -1,4 +1,4 @@
-// Made with Blockbench 4.2.4
+// Made with Blockbench 4.2.5
 // Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -7,47 +7,54 @@ public class Modelarmor<T extends Entity> extends EntityModel<T> {
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
 			new ResourceLocation("modid", "armor"), "main");
-	private final ModelPart Body2;
+	private final ModelPart Body;
 	private final ModelPart RightArm;
 	private final ModelPart LeftArm;
 	private final ModelPart RightLeg;
 	private final ModelPart LeftLeg;
 	private final ModelPart Head;
+	private final ModelPart tail;
+	private final ModelPart Body2;
+	private final ModelPart RightLeg2;
+	private final ModelPart LeftLeg2;
 
 	public Modelarmor(ModelPart root) {
-		this.Body2 = root.getChild("Body2");
+		this.Body = root.getChild("Body");
 		this.RightArm = root.getChild("RightArm");
 		this.LeftArm = root.getChild("LeftArm");
 		this.RightLeg = root.getChild("RightLeg");
 		this.LeftLeg = root.getChild("LeftLeg");
 		this.Head = root.getChild("Head");
+		this.tail = root.getChild("tail");
+		this.Body2 = root.getChild("Body2");
+		this.RightLeg2 = root.getChild("RightLeg2");
+		this.LeftLeg2 = root.getChild("LeftLeg2");
 	}
 
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition Body2 = partdefinition.addOrReplaceChild("Body2", CubeListBuilder.create().texOffs(16, 16)
-				.addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(1.01F)),
-				PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition Body = partdefinition.addOrReplaceChild("Body", CubeListBuilder.create().texOffs(16, 16).addBox(
+				-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(1.01F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition cube_r1 = Body2.addOrReplaceChild("cube_r1",
+		PartDefinition cube_r1 = Body.addOrReplaceChild("cube_r1",
 				CubeListBuilder.create().texOffs(55, 2).addBox(-0.5F, 0.5F, -1.0F, 1.0F, 1.0F, 2.0F,
 						new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 11.0F, 4.0F, -0.3927F, 0.0F, 0.0F));
 
-		PartDefinition cube_r2 = Body2.addOrReplaceChild("cube_r2",
+		PartDefinition cube_r2 = Body.addOrReplaceChild("cube_r2",
 				CubeListBuilder.create().texOffs(52, 0).addBox(-1.0F, -1.0F, -3.0F, 2.0F, 2.0F, 4.0F,
 						new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 8.25F, 5.0F, -0.3054F, 0.0F, 0.0F));
 
-		PartDefinition cube_r3 = Body2
+		PartDefinition cube_r3 = Body
 				.addOrReplaceChild("cube_r3",
 						CubeListBuilder.create().texOffs(52, 0).addBox(-1.0F, -0.75F, -3.5F, 2.0F, 2.0F, 4.0F,
 								new CubeDeformation(0.0F)),
 						PartPose.offsetAndRotation(0.0F, 4.0F, 6.0F, -0.3054F, 0.0F, 0.0F));
 
-		PartDefinition cube_r4 = Body2
+		PartDefinition cube_r4 = Body
 				.addOrReplaceChild("cube_r4",
 						CubeListBuilder.create().texOffs(53, 0).addBox(-0.5F, 0.75F, -2.75F, 1.0F, 1.0F, 4.0F,
 								new CubeDeformation(0.0F)),
@@ -98,42 +105,72 @@ public class Modelarmor<T extends Entity> extends EntityModel<T> {
 		PartDefinition Head = partdefinition.addOrReplaceChild("Head",
 				CubeListBuilder.create().texOffs(0, 0)
 						.addBox(-4.0F, -8.0F, -5.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)).texOffs(32, 8)
-						.addBox(-7.0F, -4.0F, -3.0F, 2.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(32, 8)
-						.addBox(5.0F, -4.0F, -3.0F, 2.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
+						.addBox(-7.0F, -3.75F, -2.25F, 2.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(32, 8)
+						.addBox(5.0F, -4.0F, -3.0F, 2.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition cube_r9 = Head
-				.addOrReplaceChild("cube_r9",
-						CubeListBuilder.create().texOffs(24, 0).addBox(-1.75F, -3.75F, -5.75F, 8.0F, 3.0F, 3.0F,
-								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(10.0F, 0.0F, 0.0F, 0.0F, 0.9599F, 0.0F));
+		PartDefinition cube_r9 = Head.addOrReplaceChild("cube_r9",
+				CubeListBuilder.create().texOffs(24, 0).mirror()
+						.addBox(-2.75F, -1.75F, -1.0F, 6.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+				PartPose.offsetAndRotation(-7.3996F, -1.75F, -4.5676F, 0.0F, -1.1781F, 0.0F));
 
 		PartDefinition cube_r10 = Head.addOrReplaceChild("cube_r10",
-				CubeListBuilder.create().texOffs(24, 0).addBox(-6.0F, -3.75F, -5.75F, 8.0F, 3.0F, 3.0F,
+				CubeListBuilder.create().texOffs(24, 0).addBox(-3.25F, -1.75F, -1.0F, 6.0F, 2.0F, 2.0F,
 						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-10.0F, 0.0F, 0.0F, 0.0F, -0.9599F, 0.0F));
+				PartPose.offsetAndRotation(7.3996F, -1.75F, -4.5676F, 0.0F, 1.1781F, 0.0F));
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(),
+				PartPose.offset(0.0F, 12.0F, 2.0F));
+
+		PartDefinition cube_r11 = tail.addOrReplaceChild("cube_r11",
+				CubeListBuilder.create().texOffs(54, 22).addBox(-1.0F, -3.5F, -1.5F, 2.0F, 7.0F, 3.0F,
+						new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 4.8924F, 12.7598F, 1.6144F, 0.0F, 0.0F));
+
+		PartDefinition cube_r12 = tail.addOrReplaceChild("cube_r12",
+				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -0.9024F, -1.5104F, 4.0F, 7.0F, 4.0F,
+						new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(0.0F, 4.7179F, 5.1485F, 1.3963F, 0.0F, 0.0F));
+
+		PartDefinition cube_r13 = tail
+				.addOrReplaceChild("cube_r13",
+						CubeListBuilder.create().texOffs(27, 0).addBox(-3.0F, -2.75F, -2.0F, 6.0F, 7.0F, 4.0F,
+								new CubeDeformation(0.0F)),
+						PartPose.offsetAndRotation(0.0F, 2.0F, 2.0F, 0.9163F, 0.0F, 0.0F));
+
+		PartDefinition Body2 = partdefinition.addOrReplaceChild("Body2", CubeListBuilder.create().texOffs(16, 16)
+				.addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(0.51F)),
+				PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition RightLeg2 = partdefinition.addOrReplaceChild("RightLeg2", CubeListBuilder.create().texOffs(0, 16)
+				.addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.5F)),
+				PartPose.offset(-1.9F, 12.0F, 0.0F));
+
+		PartDefinition LeftLeg2 = partdefinition.addOrReplaceChild("LeftLeg2", CubeListBuilder.create().texOffs(0, 16)
+				.addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.5F)),
+				PartPose.offset(1.9F, 12.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 64, 32);
 	}
 
 	@Override
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch) {
+
+	}
+
+	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay,
 			float red, float green, float blue, float alpha) {
-		Body2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		Body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		RightArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		LeftArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		RightLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		LeftLeg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		Head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-	}
-
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
-			float headPitch) {
-		this.RightArm.xRot = Mth.cos(limbSwing * 0.6662F + (float) Math.PI) * limbSwingAmount;
-		this.LeftLeg.xRot = Mth.cos(limbSwing * 1.0F) * -1.0F * limbSwingAmount;
-		this.Head.yRot = netHeadYaw / (180F / (float) Math.PI);
-		this.Head.xRot = headPitch / (180F / (float) Math.PI);
-		this.LeftArm.xRot = Mth.cos(limbSwing * 0.6662F) * limbSwingAmount;
-		this.RightLeg.xRot = Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount;
+		tail.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		Body2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		RightLeg2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		LeftLeg2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 1,
-    "texture": "acid_shooter",
+    "texture": "acid_shooter_item",
     "customModelName": "acid_shooter:default",
     "name": "Acid Shooter",
     "specialInfo": [],
@@ -23,7 +23,7 @@
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 1.0,
-    "bulletPower": 2.0,
+    "bulletPower": 0.5,
     "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,

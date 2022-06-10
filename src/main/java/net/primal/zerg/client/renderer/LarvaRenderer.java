@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 public class LarvaRenderer extends MobRenderer<LarvaEntity, Modellarva<LarvaEntity>> {
 	public LarvaRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modellarva(context.bakeLayer(Modellarva.LAYER_LOCATION)), 0.8f);
+		super(context, new Modellarva(context.bakeLayer(Modellarva.LAYER_LOCATION)), 0.1f);
 	}
 
 	@Override

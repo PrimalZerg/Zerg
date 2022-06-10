@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -61,7 +60,7 @@ public class CreepTumorBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return Shapes.or(box(0, 0, 0, 16, 2, 16), box(1, 0, 3, 9, 3.75, 7)).move(offset.x, offset.y, offset.z);
+		return box(0, 0, 0, 16, 2, 16).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

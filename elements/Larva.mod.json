@@ -9,7 +9,7 @@
     "mobModelGlowTexture": "",
     "modelWidth": 0.3,
     "modelHeight": 0.3,
-    "modelShadowSize": 0.8,
+    "modelShadowSize": 0.1,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -56,7 +56,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
-    "guiBoundTo": "Cooconstorage",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 2,
     "inventoryStackSize": 64,
     "disableCollisions": false,

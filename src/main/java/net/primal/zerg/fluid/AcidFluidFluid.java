@@ -6,6 +6,7 @@ import net.primal.zerg.init.ZergModItems;
 import net.primal.zerg.init.ZergModFluids;
 import net.primal.zerg.init.ZergModBlocks;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fluids.FluidAttributes;
 
@@ -20,9 +21,10 @@ import net.minecraft.core.particles.ParticleOptions;
 public abstract class AcidFluidFluid extends ForgeFlowingFluid {
 	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ZergModFluids.ACID_FLUID,
 			ZergModFluids.FLOWING_ACID_FLUID,
-			FluidAttributes.builder(new ResourceLocation("zerg:blocks/acid_still"), new ResourceLocation("zerg:blocks/acid_flow"))
+			FluidAttributes.builder(new ResourceLocation("zerg:blocks/acid_still"), new ResourceLocation("zerg:blocks/acid_flow")).luminosity(2)
 
-	).explosionResistance(100f).canMultiply()
+					.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty"))))
+			.explosionResistance(100f).canMultiply()
 
 			.bucket(ZergModItems.ACID_FLUID_BUCKET).block(() -> (LiquidBlock) ZergModBlocks.ACID_FLUID.get());
 

@@ -8,7 +8,6 @@ import net.primal.zerg.client.model.Modelspine;
 import net.primal.zerg.client.model.Modelroach;
 import net.primal.zerg.client.model.Modellarva;
 import net.primal.zerg.client.model.Modelhydralisk;
-import net.primal.zerg.client.model.Modeldehaka;
 import net.primal.zerg.client.model.Modelcustom_model;
 import net.primal.zerg.client.model.Modelarmor_leggings;
 import net.primal.zerg.client.model.Modelarmor;
@@ -29,6 +28,5 @@ public class ZergModModels {
 		event.registerLayerDefinition(Modellarva.LAYER_LOCATION, Modellarva::createBodyLayer);
 		event.registerLayerDefinition(Modelhydralisk.LAYER_LOCATION, Modelhydralisk::createBodyLayer);
 		event.registerLayerDefinition(Modelarmor.LAYER_LOCATION, Modelarmor::createBodyLayer);
-		event.registerLayerDefinition(Modeldehaka.LAYER_LOCATION, Modeldehaka::createBodyLayer);
 	}
 }

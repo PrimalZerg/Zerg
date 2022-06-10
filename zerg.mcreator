@@ -712,14 +712,6 @@
       "registry_name": "feral_zergling_drops"
     },
     {
-      "name": "Cooconstorage",
-      "type": "gui",
-      "sortid": 83,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cooconstorage"
-    },
-    {
       "name": "DeepslateMineralDrops",
       "type": "loottable",
       "sortid": 84,
@@ -832,6 +824,17 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "FeralRoachOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feral_roach_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -884,7 +887,7 @@
       "item.zerg.carapace_armor_helmet": "Carapace Helmet",
       "item.minecraft.splash_potion.effect.acid_potion": "Splash Potion of Acid",
       "block.zerg.gray_zerg_carapace": "Gray Zerg Carapace",
-      "item.zerg.feral_roach_spawn_egg": "Wild Roach Spawn Egg",
+      "item.zerg.feral_roach_spawn_egg": "Feral Roach Spawn Egg",
       "item.zerg.mineral_shard": "Mineral Shard",
       "effect.zerg.acid_icon": "Acid",
       "item.zerg.acid_shooter": "Acid Shooter",
@@ -899,7 +902,7 @@
       "entity.zerg.wild_zergling": "Wild Zergling",
       "entity.zerg.wild_roach": "Wild Roach",
       "item.minecraft.lingering_potion.effect.acid_potion": "Lingering Potion of Acid",
-      "entity.zerg.feral_roach": "Wild Roach",
+      "entity.zerg.feral_roach": "Feral Roach",
       "block.zerg.purple_zerg_carapace": "Purple Zerg Carapace",
       "block.zerg.small_zerg_claw": "Small Zerg Claw"
     }

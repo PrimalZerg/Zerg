@@ -2,6 +2,6 @@
   "parent": "zerg:custom/spine_shooter",
   "textures": {
     "0": "zerg:blocks/spine_shooter",
-    "particle": "zerg:items/spine_shooter"
+    "particle": "zerg:items/spine_shooter_item"
   }
 }

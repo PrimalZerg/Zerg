@@ -11,6 +11,7 @@ import net.primal.zerg.item.SpineShooterItem;
 import net.primal.zerg.item.SpineItem;
 import net.primal.zerg.item.MineralShardItem;
 import net.primal.zerg.item.EmptyVespeneBubbleItem;
+import net.primal.zerg.item.CarapaceArmorItem;
 import net.primal.zerg.item.AcidSplashItem;
 import net.primal.zerg.item.AcidShooterItem;
 import net.primal.zerg.item.AcidFluidItem;
@@ -81,6 +82,12 @@ public class ZergModItems {
 	public static final RegistryObject<Item> STORAGE_COCOON = block(ZergModBlocks.STORAGE_COCOON, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> LARVA = REGISTRY.register("larva_spawn_egg",
 			() -> new ForgeSpawnEggItem(ZergModEntities.LARVA, -10538748, -9288321, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+	public static final RegistryObject<Item> CARAPACE_ARMOR_HELMET = REGISTRY.register("carapace_armor_helmet", () -> new CarapaceArmorItem.Helmet());
+	public static final RegistryObject<Item> CARAPACE_ARMOR_CHESTPLATE = REGISTRY.register("carapace_armor_chestplate",
+			() -> new CarapaceArmorItem.Chestplate());
+	public static final RegistryObject<Item> CARAPACE_ARMOR_LEGGINGS = REGISTRY.register("carapace_armor_leggings",
+			() -> new CarapaceArmorItem.Leggings());
+	public static final RegistryObject<Item> CARAPACE_ARMOR_BOOTS = REGISTRY.register("carapace_armor_boots", () -> new CarapaceArmorItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

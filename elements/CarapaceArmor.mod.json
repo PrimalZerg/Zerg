@@ -1,0 +1,65 @@
+{
+  "_fv": 28,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "zerg_carapace_helmet",
+    "enableBody": true,
+    "textureBody": "zerg_carapace_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "zerg_carapace_leggings",
+    "enableBoots": true,
+    "textureBoots": "zerg_carapace_boots",
+    "onBootsTick": {
+      "name": "CarapaceArmorBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:ZergMisc"
+    },
+    "armorTextureFile": "carapacearmor",
+    "helmetName": "Carapace Helmet",
+    "bodyName": "Carapace Chestplate",
+    "leggingsName": "Carapace Leggings",
+    "bootsName": "Carapace Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelarmor",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Modelarmor",
+    "bodyModelPart": "Body2",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Modelarmor_leggings",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Modelarmor",
+    "bootsModelPartL": "LeftLeg",
+    "bootsModelPartR": "RightLeg",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_elytra"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:ZergCarapace"
+      }
+    ]
+  }
+}

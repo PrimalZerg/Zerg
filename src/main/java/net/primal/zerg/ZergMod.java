@@ -25,6 +25,7 @@ import net.primal.zerg.init.ZergModFluids;
 import net.primal.zerg.init.ZergModFeatures;
 import net.primal.zerg.init.ZergModEntities;
 import net.primal.zerg.init.ZergModBlocks;
+import net.primal.zerg.init.ZergModBlockEntities;
 import net.primal.zerg.init.ZergModBiomes;
 
 import net.minecraftforge.network.simple.SimpleChannel;
@@ -56,7 +57,7 @@ public class ZergMod {
 		ZergModBlocks.REGISTRY.register(bus);
 		ZergModItems.REGISTRY.register(bus);
 		ZergModEntities.REGISTRY.register(bus);
-
+		ZergModBlockEntities.REGISTRY.register(bus);
 		ZergModFeatures.REGISTRY.register(bus);
 		ZergModFluids.REGISTRY.register(bus);
 

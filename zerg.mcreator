@@ -915,6 +915,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "spawningpool"
+    },
+    {
+      "name": "StorageCocoonGui",
+      "type": "gui",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_cocoon_gui"
     }
   ],
   "variable_elements": [],

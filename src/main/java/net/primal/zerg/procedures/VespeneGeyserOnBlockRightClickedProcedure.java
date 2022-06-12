@@ -26,21 +26,14 @@ public class VespeneGeyserOnBlockRightClickedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ZergModItems.EMPTY_VESPENE_BUBBLE
 				.get()
 				&& entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-						ClipContext.Block.OUTLINE, ClipContext.Fluid.SOURCE_ONLY, entity)).getType() == HitResult.Type.BLOCK) {
-			if ((world
-					.getFluidState(new BlockPos(
-							entity.level
-									.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-											ClipContext.Block.OUTLINE, ClipContext.Fluid.SOURCE_ONLY, entity))
-									.getBlockPos().getX(),
-							entity.level
-									.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-											ClipContext.Block.OUTLINE, ClipContext.Fluid.SOURCE_ONLY, entity))
-									.getBlockPos().getY(),
-							entity.level
-									.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-											ClipContext.Block.OUTLINE, ClipContext.Fluid.SOURCE_ONLY, entity))
-									.getBlockPos().getZ()))
+						ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getType() == HitResult.Type.BLOCK) {
+			if ((world.getFluidState(new BlockPos(
+					entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
+							ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
+					entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
+							ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
+					entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
+							ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()))
 					.createLegacyBlock()).getBlock() == ZergModBlocks.VESPENE_GEYSER.get()) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof LivingEntity _entity) {

@@ -1,25 +1,24 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "01",
-    "23"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "zerg:zerg_carapace"
     },
-    "1": {
+    {
       "item": "zerg:zerg_carapace"
     },
-    "2": {
+    {
       "item": "zerg:zerg_carapace"
     },
-    "3": {
+    {
+      "item": "zerg:zerg_carapace"
+    },
+    {
       "item": "zerg:zerg_carapace"
     }
-  },
+  ],
   "result": {
-    "item": "zerg:block_of_zerg_chitin",
+    "item": "zerg:block_of_zerg_chititn_dark",
     "count": 4
   }
 }

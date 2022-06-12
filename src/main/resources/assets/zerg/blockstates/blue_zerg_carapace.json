@@ -1,14 +1,25 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "zerg:block/blue_zerg_carapace",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
+    "facing=north": {
       "model": "zerg:block/blue_zerg_carapace"
     },
-    "axis=z": {
+    "facing=east": {
+      "model": "zerg:block/blue_zerg_carapace",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "zerg:block/blue_zerg_carapace",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "zerg:block/blue_zerg_carapace",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "zerg:block/blue_zerg_carapace",
+      "x": 270
+    },
+    "facing=down": {
       "model": "zerg:block/blue_zerg_carapace",
       "x": 90
     }

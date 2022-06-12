@@ -7,24 +7,12 @@
     "cookingTime": 200,
     "recipeRetstackSize": 4,
     "group": "",
-    "recipeShapeless": false,
+    "recipeShapeless": true,
     "recipeSlots": [
       {
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ZergCarapace"
-      },
-      {
         "value": "CUSTOM:ZergCarapace"
       },
       {
@@ -35,12 +23,24 @@
       },
       {
         "value": "CUSTOM:ZergCarapace"
+      },
+      {
+        "value": "CUSTOM:ZergCarapace"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ZergCarapace"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfZergChitin"
+      "value": "CUSTOM:BlockOfZergChititnDark"
     },
-    "name": "chitin",
+    "name": "chititn_dark",
     "namespace": "mod"
   }
 }

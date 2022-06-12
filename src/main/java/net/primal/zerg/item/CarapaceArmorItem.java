@@ -4,6 +4,7 @@ package net.primal.zerg.item;
 import net.primal.zerg.procedures.CarapaceArmorBootsTickEventProcedure;
 import net.primal.zerg.init.ZergModTabs;
 import net.primal.zerg.init.ZergModItems;
+import net.primal.zerg.client.model.Modelarmor_leggings;
 import net.primal.zerg.client.model.Modelarmor;
 
 import net.minecraftforge.registries.ForgeRegistries;
@@ -149,9 +150,10 @@ public abstract class CarapaceArmorItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("left_leg",
-							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).LeftLeg2, "right_leg",
-							new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).RightLeg2, "head",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							new Modelarmor_leggings(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor_leggings.LAYER_LOCATION)).LeftLeg,
+							"right_leg",
+							new Modelarmor_leggings(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor_leggings.LAYER_LOCATION)).RightLeg,
+							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",

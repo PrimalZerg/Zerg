@@ -891,6 +891,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "brood_roach_drops"
+    },
+    {
+      "name": "ChititnDark",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chititn_dark"
     }
   ],
   "variable_elements": [],

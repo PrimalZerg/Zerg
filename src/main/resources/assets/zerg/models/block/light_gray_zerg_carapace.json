@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "zerg:blocks/zerg_chitin",
+    "down": "zerg:blocks/light_gray_zerg_carapace",
     "up": "zerg:blocks/light_gray_zerg_carapace",
     "north": "zerg:blocks/light_gray_zerg_carapace",
-    "east": "zerg:blocks/light_gray_zerg_carapace_side",
+    "east": "zerg:blocks/light_gray_zerg_carapace",
     "south": "zerg:blocks/light_gray_zerg_carapace",
-    "west": "zerg:blocks/light_gray_zerg_carapace_side",
-    "particle": "zerg:blocks/zerg_chitin"
+    "west": "zerg:blocks/light_gray_zerg_carapace",
+    "particle": "zerg:blocks/light_gray_zerg_carapace"
   }
 }

@@ -56,7 +56,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
-    "spawnBiomeNether": true,
+    "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 7,
     "biomeDictionaryTypes": [

@@ -34,16 +34,10 @@ public class ZergModEntityRenderers {
 		event.registerEntityRenderer(ZergModEntities.WILD_ZERGLING.get(), ZerglingRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.HOSTILE_ZERGLING.get(), HostileZerglingRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.BROOD_ROACH.get(), BroodRoachRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.BROOD_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.WILD_ROACH.get(), WildRoachRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.WILD_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.FERAL_ROACH.get(), FeralRoachRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.FERAL_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.BROOD_HYDRALISK.get(), BroodHydraliskRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.BROOD_HYDRALISK_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.WILD_HYDRALISK.get(), WildHydraliskRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.WILD_HYDRALISK_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.HOSTILE_HYDRALISK.get(), HostileHydraliskRenderer::new);
-		event.registerEntityRenderer(ZergModEntities.HOSTILE_HYDRALISK_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

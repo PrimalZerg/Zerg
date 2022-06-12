@@ -899,6 +899,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "chititn_dark"
+    },
+    {
+      "name": "ZergHive",
+      "type": "biome",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerg_hive"
+    },
+    {
+      "name": "Spawningpool",
+      "type": "structure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawningpool"
     }
   ],
   "variable_elements": [],
@@ -933,6 +949,7 @@
       "item.zerg.carapace_armor_boots": "Carapace Boots",
       "item.minecraft.potion.effect.acid_potion": "Potion of Acid",
       "block.zerg.mineral_ore": "Mineral Ore",
+      "biome.zerg.zerg_hive": "Zerg Hive",
       "block.zerg.big_zerg_claw": "Big Zerg Claw",
       "item.zerg.hostile_hydralisk_spawn_egg": "Feral Hydralisk Spawn Egg",
       "item.zerg.vespene_bubble": "Vespene Bubble",

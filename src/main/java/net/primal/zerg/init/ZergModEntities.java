@@ -5,21 +5,15 @@
 package net.primal.zerg.init;
 
 import net.primal.zerg.entity.ZerglingEntity;
-import net.primal.zerg.entity.WildRoachEntityProjectile;
 import net.primal.zerg.entity.WildRoachEntity;
-import net.primal.zerg.entity.WildHydraliskEntityProjectile;
 import net.primal.zerg.entity.WildHydraliskEntity;
 import net.primal.zerg.entity.SpineShooterEntity;
 import net.primal.zerg.entity.LarvaEntity;
 import net.primal.zerg.entity.HostileZerglingEntity;
-import net.primal.zerg.entity.HostileHydraliskEntityProjectile;
 import net.primal.zerg.entity.HostileHydraliskEntity;
-import net.primal.zerg.entity.FeralRoachEntityProjectile;
 import net.primal.zerg.entity.FeralRoachEntity;
 import net.primal.zerg.entity.BroodZerglingEntity;
-import net.primal.zerg.entity.BroodRoachEntityProjectile;
 import net.primal.zerg.entity.BroodRoachEntity;
-import net.primal.zerg.entity.BroodHydraliskEntityProjectile;
 import net.primal.zerg.entity.BroodHydraliskEntity;
 import net.primal.zerg.entity.AcidShooterEntity;
 import net.primal.zerg.ZergMod;
@@ -70,53 +64,31 @@ public class ZergModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BroodRoachEntity::new)
 
 					.sized(1.3f, 1.5999999999999999f));
-	public static final RegistryObject<EntityType<BroodRoachEntityProjectile>> BROOD_ROACH_PROJECTILE = register("projectile_brood_roach",
-			EntityType.Builder.<BroodRoachEntityProjectile>of(BroodRoachEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(BroodRoachEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<WildRoachEntity>> WILD_ROACH = register("wild_roach",
 			EntityType.Builder.<WildRoachEntity>of(WildRoachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WildRoachEntity::new)
 
 					.sized(1.3f, 1.5999999999999999f));
-	public static final RegistryObject<EntityType<WildRoachEntityProjectile>> WILD_ROACH_PROJECTILE = register("projectile_wild_roach",
-			EntityType.Builder.<WildRoachEntityProjectile>of(WildRoachEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(WildRoachEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<FeralRoachEntity>> FERAL_ROACH = register("feral_roach",
 			EntityType.Builder.<FeralRoachEntity>of(FeralRoachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FeralRoachEntity::new)
 
 					.sized(1.3f, 1.5999999999999999f));
-	public static final RegistryObject<EntityType<FeralRoachEntityProjectile>> FERAL_ROACH_PROJECTILE = register("projectile_feral_roach",
-			EntityType.Builder.<FeralRoachEntityProjectile>of(FeralRoachEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(FeralRoachEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<BroodHydraliskEntity>> BROOD_HYDRALISK = register("brood_hydralisk",
 			EntityType.Builder.<BroodHydraliskEntity>of(BroodHydraliskEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BroodHydraliskEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<BroodHydraliskEntityProjectile>> BROOD_HYDRALISK_PROJECTILE = register("projectile_brood_hydralisk",
-			EntityType.Builder.<BroodHydraliskEntityProjectile>of(BroodHydraliskEntityProjectile::new, MobCategory.MISC)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
-					.setCustomClientFactory(BroodHydraliskEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<WildHydraliskEntity>> WILD_HYDRALISK = register("wild_hydralisk",
 			EntityType.Builder.<WildHydraliskEntity>of(WildHydraliskEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WildHydraliskEntity::new)
 
 					.sized(0.9f, 2.4f));
-	public static final RegistryObject<EntityType<WildHydraliskEntityProjectile>> WILD_HYDRALISK_PROJECTILE = register("projectile_wild_hydralisk",
-			EntityType.Builder.<WildHydraliskEntityProjectile>of(WildHydraliskEntityProjectile::new, MobCategory.MISC)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
-					.setCustomClientFactory(WildHydraliskEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<HostileHydraliskEntity>> HOSTILE_HYDRALISK = register("hostile_hydralisk",
 			EntityType.Builder.<HostileHydraliskEntity>of(HostileHydraliskEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HostileHydraliskEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HostileHydraliskEntityProjectile>> HOSTILE_HYDRALISK_PROJECTILE = register(
-			"projectile_hostile_hydralisk",
-			EntityType.Builder.<HostileHydraliskEntityProjectile>of(HostileHydraliskEntityProjectile::new, MobCategory.MISC)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
-					.setCustomClientFactory(HostileHydraliskEntityProjectile::new).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

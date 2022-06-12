@@ -111,7 +111,7 @@
         "value": "CUSTOM:VespeneBubble"
       }
     ],
-    "ranged": true,
+    "ranged": false,
     "rangedAttackItem": {
       "value": "CUSTOM:Spine"
     },

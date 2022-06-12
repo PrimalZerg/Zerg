@@ -85,7 +85,7 @@ public abstract class CarapaceArmorItem extends ArmorItem {
 				@Override
 				public HumanoidModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Body, "hat",
+							Map.of("head", new Modelarmor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelarmor.LAYER_LOCATION)).Head, "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",

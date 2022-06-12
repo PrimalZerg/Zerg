@@ -10,13 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:MineralShard"
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": ""
+        "value": "CUSTOM:MineralShard"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -28,13 +28,13 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": ""
+        "value": "CUSTOM:MineralShard"
       },
       {
         "value": "Items.LEATHER"
       },
       {
-        "value": ""
+        "value": "CUSTOM:MineralShard"
       }
     ],
     "recipeReturnStack": {

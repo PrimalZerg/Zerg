@@ -3,7 +3,7 @@
   "_type": "fluid",
   "definition": {
     "name": "Acid",
-    "bucketName": "Acid Fluid Bucket",
+    "bucketName": "Acid Bucket",
     "textureStill": "acid_still",
     "textureFlowing": "acid_flow",
     "tintType": "No tint",

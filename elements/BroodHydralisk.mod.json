@@ -2,22 +2,22 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Feral Hydralisk",
+    "mobName": "Hydralisk",
     "mobLabel": "",
     "mobModelName": "Modelhydralisk",
-    "mobModelTexture": "hydralisk.png",
+    "mobModelTexture": "brood_hydralisk.png",
     "mobModelGlowTexture": "hydralisk_eyes.png",
-    "modelWidth": 0.9,
-    "modelHeight": 2.4,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -9292010,
+      "value": -12969977,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -728330,
+      "value": -6750055,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -30,7 +30,7 @@
       "value": "CUSTOM:SpineShooter"
     },
     "equipmentOffHand": {
-      "value": ""
+      "value": "CUSTOM:SpineShooter"
     },
     "equipmentHelmet": {
       "value": ""
@@ -44,8 +44,8 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
-    "mobCreatureType": "ARTHROPOD",
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
     "attackStrength": 5,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
@@ -53,7 +53,7 @@
     "armorBaseValue": 2.0,
     "trackingRange": 64,
     "health": 30,
-    "xpAmount": 3,
+    "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:ZergClaw"
+      "value": "CUSTOM:ZergCarapace"
     },
     "livingSound": {
       "value": ""
@@ -100,7 +100,7 @@
     "particleAmount": 4,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayerMP</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": true,
     "tameable": true,
     "breedTriggerItems": [
@@ -116,8 +116,8 @@
       "value": "CUSTOM:Spine"
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,

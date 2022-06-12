@@ -1,13 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 1 ",
+    "012",
     "345",
-    " 7 "
+    "678"
   ],
   "key": {
+    "0": {
+      "item": "zerg:mineral_shard"
+    },
     "1": {
       "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "zerg:mineral_shard"
     },
     "3": {
       "item": "minecraft:iron_ingot"
@@ -18,8 +24,14 @@
     "5": {
       "item": "minecraft:iron_ingot"
     },
+    "6": {
+      "item": "zerg:mineral_shard"
+    },
     "7": {
       "item": "minecraft:leather"
+    },
+    "8": {
+      "item": "zerg:mineral_shard"
     }
   },
   "result": {

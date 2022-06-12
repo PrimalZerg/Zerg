@@ -15,7 +15,9 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -62,18 +64,19 @@ public class HostileZerglingEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new LeapAtTargetGoal(this, (float) 0.5));
-		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new FloatGoal(this));
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
 		});
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
-		this.goalSelector.addGoal(7, new RandomSwimmingGoal(this, 1, 40));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
+		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new RandomSwimmingGoal(this, 1, 40));
 	}
 
 	@Override

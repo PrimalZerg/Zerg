@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Block Of Zerg Chitin",
+    "name": "Zerg Chitin",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -75,24 +75,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "GROUND"
     },
     "breakSound": {
-      "value": ""
+      "value": "block.soul_sand.break"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.soul_sand.fall"
     },
     "hitSound": {
-      "value": ""
+      "value": "block.soul_sand.hit"
     },
     "placeSound": {
-      "value": ""
+      "value": "block.soul_soil.place"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.soul_sand.step"
     },
     "luminance": 0,
     "unbreakable": false,

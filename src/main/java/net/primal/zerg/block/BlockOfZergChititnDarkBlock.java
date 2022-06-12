@@ -18,8 +18,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class BlockOfZergChitinBlock extends Block {
-	public BlockOfZergChitinBlock() {
+public class BlockOfZergChititnDarkBlock extends Block {
+	public BlockOfZergChititnDarkBlock() {
 		super(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.TERRACOTTA_BROWN)
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("block.soul_sand.break")),
 						() -> new SoundEvent(new ResourceLocation("block.soul_sand.step")),

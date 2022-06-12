@@ -28,6 +28,7 @@ import net.primal.zerg.block.CreepTumorBlock;
 import net.primal.zerg.block.CreepBlock;
 import net.primal.zerg.block.BrownZergCarapaceBlock;
 import net.primal.zerg.block.BlueZergCarapaceBlock;
+import net.primal.zerg.block.BlockOfZergChititnDarkBlock;
 import net.primal.zerg.block.BlockOfZergChitinBlock;
 import net.primal.zerg.block.BlackZergCarapaceBlock;
 import net.primal.zerg.block.BigZergClawBlock;
@@ -77,6 +78,8 @@ public class ZergModBlocks {
 	public static final RegistryObject<Block> CREEP_TUMOR = REGISTRY.register("creep_tumor", () -> new CreepTumorBlock());
 	public static final RegistryObject<Block> ACID_FLUID = REGISTRY.register("acid_fluid", () -> new AcidFluidBlock());
 	public static final RegistryObject<Block> STORAGE_COCOON = REGISTRY.register("storage_cocoon", () -> new StorageCocoonBlock());
+	public static final RegistryObject<Block> BLOCK_OF_ZERG_CHITITN_DARK = REGISTRY.register("block_of_zerg_chititn_dark",
+			() -> new BlockOfZergChititnDarkBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

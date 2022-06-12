@@ -12,6 +12,9 @@ import net.primal.zerg.client.renderer.LarvaRenderer;
 import net.primal.zerg.client.renderer.HostileZerglingRenderer;
 import net.primal.zerg.client.renderer.HostileHydraliskRenderer;
 import net.primal.zerg.client.renderer.FeralRoachRenderer;
+import net.primal.zerg.client.renderer.BroodZerglingRenderer;
+import net.primal.zerg.client.renderer.BroodRoachRenderer;
+import net.primal.zerg.client.renderer.BroodHydraliskRenderer;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -37,5 +40,10 @@ public class ZergModEntityRenderers {
 		event.registerEntityRenderer(ZergModEntities.FERAL_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.ACID_SHOOTER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(ZergModEntities.LARVA.get(), LarvaRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.BROOD_HYDRALISK.get(), BroodHydraliskRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.BROOD_HYDRALISK_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.BROOD_ROACH.get(), BroodRoachRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.BROOD_ROACH_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ZergModEntities.BROOD_ZERGLING.get(), BroodZerglingRenderer::new);
 	}
 }

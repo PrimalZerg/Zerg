@@ -88,6 +88,13 @@ public class ZergModItems {
 	public static final RegistryObject<Item> CARAPACE_ARMOR_LEGGINGS = REGISTRY.register("carapace_armor_leggings",
 			() -> new CarapaceArmorItem.Leggings());
 	public static final RegistryObject<Item> CARAPACE_ARMOR_BOOTS = REGISTRY.register("carapace_armor_boots", () -> new CarapaceArmorItem.Boots());
+	public static final RegistryObject<Item> BROOD_HYDRALISK = REGISTRY.register("brood_hydralisk_spawn_egg",
+			() -> new ForgeSpawnEggItem(ZergModEntities.BROOD_HYDRALISK, -12969977, -6750055, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+	public static final RegistryObject<Item> BROOD_ROACH = REGISTRY.register("brood_roach_spawn_egg",
+			() -> new ForgeSpawnEggItem(ZergModEntities.BROOD_ROACH, -11844292, -6750055, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+	public static final RegistryObject<Item> BROOD_ZERGLING = REGISTRY.register("brood_zergling_spawn_egg",
+			() -> new ForgeSpawnEggItem(ZergModEntities.BROOD_ZERGLING, -9551069, -3407668, new Item.Properties().tab(ZergModTabs.TAB_ZERG_MOBS)));
+	public static final RegistryObject<Item> BLOCK_OF_ZERG_CHITITN_DARK = block(ZergModBlocks.BLOCK_OF_ZERG_CHITITN_DARK, ZergModTabs.TAB_ZERG_MISC);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

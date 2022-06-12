@@ -1,6 +1,7 @@
 
 package net.primal.zerg.block;
 
+import net.primal.zerg.procedures.VespeneGeyserOnBlockRightClickedProcedure;
 import net.primal.zerg.init.ZergModParticleTypes;
 import net.primal.zerg.init.ZergModItems;
 import net.primal.zerg.init.ZergModBlocks;
@@ -12,6 +13,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
@@ -32,6 +34,8 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -124,6 +128,21 @@ public class VespeneGeyserBlock extends Block implements SimpleWaterloggedBlock
 			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.4D;
 			world.addParticle((SimpleParticleType) (ZergModParticleTypes.VESPENEPARTICLE.get()), x0, y0, z0, 0, 0, 0);
 		}
+	}
+
+	@Override
+	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
+		super.use(blockstate, world, pos, entity, hand, hit);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+
+		VespeneGeyserOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		return InteractionResult.SUCCESS;
 	}
 
 	@OnlyIn(Dist.CLIENT)

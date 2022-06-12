@@ -76,20 +76,20 @@ public class ZerglingEntity extends TamableAnimal {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new OwnerHurtByTargetGoal(this));
-		this.targetSelector.addGoal(2, new OwnerHurtTargetGoal(this));
-		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0.5));
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(1, new FloatGoal(this));
+		this.goalSelector.addGoal(2, new OwnerHurtByTargetGoal(this));
+		this.targetSelector.addGoal(3, new OwnerHurtTargetGoal(this));
+		this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
 		});
-		this.goalSelector.addGoal(5, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(9, new FloatGoal(this));
+		this.goalSelector.addGoal(6, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
+		this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(10, new RandomSwimmingGoal(this, 1, 40));
 	}
 

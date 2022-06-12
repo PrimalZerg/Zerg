@@ -16,6 +16,11 @@ import net.primal.zerg.entity.HostileHydraliskEntityProjectile;
 import net.primal.zerg.entity.HostileHydraliskEntity;
 import net.primal.zerg.entity.FeralRoachEntityProjectile;
 import net.primal.zerg.entity.FeralRoachEntity;
+import net.primal.zerg.entity.BroodZerglingEntity;
+import net.primal.zerg.entity.BroodRoachEntityProjectile;
+import net.primal.zerg.entity.BroodRoachEntity;
+import net.primal.zerg.entity.BroodHydraliskEntityProjectile;
+import net.primal.zerg.entity.BroodHydraliskEntity;
 import net.primal.zerg.entity.AcidShooterEntity;
 import net.primal.zerg.ZergMod;
 
@@ -90,6 +95,28 @@ public class ZergModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(LarvaEntity::new)
 
 					.sized(0.3f, 0.3f));
+	public static final RegistryObject<EntityType<BroodHydraliskEntity>> BROOD_HYDRALISK = register("brood_hydralisk",
+			EntityType.Builder.<BroodHydraliskEntity>of(BroodHydraliskEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BroodHydraliskEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BroodHydraliskEntityProjectile>> BROOD_HYDRALISK_PROJECTILE = register("projectile_brood_hydralisk",
+			EntityType.Builder.<BroodHydraliskEntityProjectile>of(BroodHydraliskEntityProjectile::new, MobCategory.MISC)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
+					.setCustomClientFactory(BroodHydraliskEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BroodRoachEntity>> BROOD_ROACH = register("brood_roach",
+			EntityType.Builder.<BroodRoachEntity>of(BroodRoachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BroodRoachEntity::new)
+
+					.sized(1.3f, 1.5999999999999999f));
+	public static final RegistryObject<EntityType<BroodRoachEntityProjectile>> BROOD_ROACH_PROJECTILE = register("projectile_brood_roach",
+			EntityType.Builder.<BroodRoachEntityProjectile>of(BroodRoachEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(BroodRoachEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BroodZerglingEntity>> BROOD_ZERGLING = register("brood_zergling",
+			EntityType.Builder.<BroodZerglingEntity>of(BroodZerglingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BroodZerglingEntity::new)
+
+					.sized(0.7f, 0.9f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -105,6 +132,9 @@ public class ZergModEntities {
 			WildRoachEntity.init();
 			FeralRoachEntity.init();
 			LarvaEntity.init();
+			BroodHydraliskEntity.init();
+			BroodRoachEntity.init();
+			BroodZerglingEntity.init();
 		});
 	}
 
@@ -117,5 +147,8 @@ public class ZergModEntities {
 		event.put(WILD_ROACH.get(), WildRoachEntity.createAttributes().build());
 		event.put(FERAL_ROACH.get(), FeralRoachEntity.createAttributes().build());
 		event.put(LARVA.get(), LarvaEntity.createAttributes().build());
+		event.put(BROOD_HYDRALISK.get(), BroodHydraliskEntity.createAttributes().build());
+		event.put(BROOD_ROACH.get(), BroodRoachEntity.createAttributes().build());
+		event.put(BROOD_ZERGLING.get(), BroodZerglingEntity.createAttributes().build());
 	}
 }

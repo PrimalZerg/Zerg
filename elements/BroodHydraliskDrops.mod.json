@@ -6,7 +6,7 @@
     "pools": [
       {
         "minrolls": 1,
-        "maxrolls": 2,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 2,
         "hasbonusrolls": false,
@@ -18,7 +18,7 @@
             },
             "weight": 2,
             "minCount": 1,
-            "maxCount": 3,
+            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": true,
@@ -31,7 +31,7 @@
               "value": "CUSTOM:ZergClaw"
             },
             "weight": 2,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -70,7 +70,7 @@
         ]
       }
     ],
-    "name": "entities/feral_roach",
+    "name": "entities/brood_hydralisk",
     "namespace": "mod"
   }
 }

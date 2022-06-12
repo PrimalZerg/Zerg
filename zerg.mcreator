@@ -3,7 +3,7 @@
     {
       "name": "WhiteZergCarapace",
       "type": "block",
-      "sortid": 1,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "white_zerg_carapace"
@@ -11,7 +11,7 @@
     {
       "name": "BlueZergCarapace",
       "type": "block",
-      "sortid": 2,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_zerg_carapace"
@@ -19,7 +19,7 @@
     {
       "name": "GrayZergCarapace",
       "type": "block",
-      "sortid": 3,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gray_zerg_carapace"
@@ -27,7 +27,7 @@
     {
       "name": "LightGrayZergCarapace",
       "type": "block",
-      "sortid": 4,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_gray_zerg_carapace"
@@ -35,7 +35,7 @@
     {
       "name": "RedZergCarapace",
       "type": "block",
-      "sortid": 5,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_zerg_carapace"
@@ -43,7 +43,7 @@
     {
       "name": "LightBlueZergCarapace",
       "type": "block",
-      "sortid": 6,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "light_blue_zerg_carapace"
@@ -51,7 +51,7 @@
     {
       "name": "PinkZergCarapace",
       "type": "block",
-      "sortid": 8,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pink_zerg_carapace"
@@ -67,7 +67,7 @@
     {
       "name": "CyanZergCarapace",
       "type": "block",
-      "sortid": 10,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cyan_zerg_carapace"
@@ -75,7 +75,7 @@
     {
       "name": "YellowZergCarapace",
       "type": "block",
-      "sortid": 11,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_zerg_carapace"
@@ -83,7 +83,7 @@
     {
       "name": "OrangeZergCarapace",
       "type": "block",
-      "sortid": 12,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "orange_zerg_carapace"
@@ -91,7 +91,7 @@
     {
       "name": "BlackZergCarapace",
       "type": "block",
-      "sortid": 13,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "black_zerg_carapace"
@@ -99,7 +99,7 @@
     {
       "name": "LimeZergCarapace",
       "type": "block",
-      "sortid": 14,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lime_zerg_carapace"
@@ -107,7 +107,7 @@
     {
       "name": "GreenZergCarapace",
       "type": "block",
-      "sortid": 15,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "green_zerg_carapace"
@@ -115,7 +115,7 @@
     {
       "name": "MagentaZergCarapace",
       "type": "block",
-      "sortid": 16,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "magenta_zerg_carapace"
@@ -123,7 +123,7 @@
     {
       "name": "BrownZergCarapace",
       "type": "block",
-      "sortid": 17,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brown_zerg_carapace"
@@ -131,7 +131,7 @@
     {
       "name": "MineralBlock",
       "type": "block",
-      "sortid": 18,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mineral_block"
@@ -139,7 +139,7 @@
     {
       "name": "ZergMisc",
       "type": "tab",
-      "sortid": 19,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_misc"
@@ -147,7 +147,7 @@
     {
       "name": "ZergClaw",
       "type": "item",
-      "sortid": 20,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_claw"
@@ -155,7 +155,7 @@
     {
       "name": "ZergCarapace",
       "type": "item",
-      "sortid": 21,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_carapace"
@@ -163,7 +163,7 @@
     {
       "name": "ZergMobs",
       "type": "tab",
-      "sortid": 22,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerg_mobs"
@@ -171,7 +171,7 @@
     {
       "name": "MineralShard",
       "type": "item",
-      "sortid": 23,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mineral_shard"
@@ -179,7 +179,7 @@
     {
       "name": "BlockOfZergChitin",
       "type": "block",
-      "sortid": 24,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_zerg_chitin"
@@ -187,7 +187,7 @@
     {
       "name": "Creep",
       "type": "block",
-      "sortid": 25,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creep"
@@ -195,7 +195,7 @@
     {
       "name": "Zergling",
       "type": "livingentity",
-      "sortid": 26,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wild_zergling"
@@ -203,7 +203,7 @@
     {
       "name": "BlockOfMineral",
       "type": "recipe",
-      "sortid": 27,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_mineral"
@@ -211,7 +211,7 @@
     {
       "name": "CarapaceBlack",
       "type": "recipe",
-      "sortid": 28,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_black"
@@ -219,7 +219,7 @@
     {
       "name": "ShardMineral",
       "type": "recipe",
-      "sortid": 29,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "shard_mineral"
@@ -227,7 +227,7 @@
     {
       "name": "CarapaceBlue",
       "type": "recipe",
-      "sortid": 30,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_blue"
@@ -235,7 +235,7 @@
     {
       "name": "CarapaceLightBlue",
       "type": "recipe",
-      "sortid": 31,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_light_blue"
@@ -243,7 +243,7 @@
     {
       "name": "CarapacePurple",
       "type": "recipe",
-      "sortid": 32,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_purple"
@@ -251,7 +251,7 @@
     {
       "name": "CarapaceMagenta",
       "type": "recipe",
-      "sortid": 33,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_magenta"
@@ -259,7 +259,7 @@
     {
       "name": "CarapacePink",
       "type": "recipe",
-      "sortid": 34,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_pink"
@@ -267,7 +267,7 @@
     {
       "name": "CarapaceOrange",
       "type": "recipe",
-      "sortid": 35,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_orange"
@@ -275,7 +275,7 @@
     {
       "name": "CarapaceBrown",
       "type": "recipe",
-      "sortid": 36,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_brown"
@@ -283,7 +283,7 @@
     {
       "name": "CarapaceGray",
       "type": "recipe",
-      "sortid": 37,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_gray"
@@ -291,7 +291,7 @@
     {
       "name": "CarapaceLightGray",
       "type": "recipe",
-      "sortid": 38,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_light_gray"
@@ -299,7 +299,7 @@
     {
       "name": "CarapaceWhite",
       "type": "recipe",
-      "sortid": 39,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_white"
@@ -307,7 +307,7 @@
     {
       "name": "CarapaceLime",
       "type": "recipe",
-      "sortid": 40,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_lime"
@@ -315,7 +315,7 @@
     {
       "name": "CarapaceGreen",
       "type": "recipe",
-      "sortid": 41,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_green"
@@ -323,7 +323,7 @@
     {
       "name": "CarapaceRed",
       "type": "recipe",
-      "sortid": 42,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_red"
@@ -331,7 +331,7 @@
     {
       "name": "CarapaceYellow",
       "type": "recipe",
-      "sortid": 43,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_yellow"
@@ -339,7 +339,7 @@
     {
       "name": "CarapaceCyan",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_cyan"
@@ -347,7 +347,7 @@
     {
       "name": "Chitin",
       "type": "recipe",
-      "sortid": 45,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chitin"
@@ -355,7 +355,7 @@
     {
       "name": "MediumZergClaw",
       "type": "block",
-      "sortid": 46,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "medium_zerg_claw"
@@ -363,7 +363,7 @@
     {
       "name": "HostileZergling",
       "type": "livingentity",
-      "sortid": 47,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hostile_zergling"
@@ -371,7 +371,7 @@
     {
       "name": "Zerglingdrops",
       "type": "loottable",
-      "sortid": 49,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "zerglingdrops"
@@ -379,7 +379,7 @@
     {
       "name": "SmallZergClaw",
       "type": "block",
-      "sortid": 51,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_zerg_claw"
@@ -387,7 +387,7 @@
     {
       "name": "SmallClawBlock",
       "type": "recipe",
-      "sortid": 52,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_claw_block"
@@ -395,7 +395,7 @@
     {
       "name": "MediumClawBlock",
       "type": "recipe",
-      "sortid": 53,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "medium_claw_block"
@@ -403,7 +403,7 @@
     {
       "name": "BigZergClaw",
       "type": "block",
-      "sortid": 54,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "big_zerg_claw"
@@ -411,7 +411,7 @@
     {
       "name": "WildHydralisk",
       "type": "livingentity",
-      "sortid": 55,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wild_hydralisk"
@@ -419,7 +419,7 @@
     {
       "name": "HostileHydralisk",
       "type": "livingentity",
-      "sortid": 56,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hostile_hydralisk"
@@ -427,7 +427,7 @@
     {
       "name": "Spine",
       "type": "item",
-      "sortid": 57,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spine"
@@ -435,7 +435,7 @@
     {
       "name": "SpineShooter",
       "type": "rangeditem",
-      "sortid": 58,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spine_shooter"
@@ -443,7 +443,7 @@
     {
       "name": "WildRoach",
       "type": "livingentity",
-      "sortid": 59,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wild_roach"
@@ -451,7 +451,7 @@
     {
       "name": "FeralRoach",
       "type": "livingentity",
-      "sortid": 60,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "feral_roach"
@@ -459,7 +459,7 @@
     {
       "name": "AcidParticle",
       "type": "particle",
-      "sortid": 62,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_particle"
@@ -467,7 +467,7 @@
     {
       "name": "AcidActiveTickCondition",
       "type": "procedure",
-      "sortid": 63,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_active_tick_condition",
@@ -483,7 +483,7 @@
     {
       "name": "Acid",
       "type": "potioneffect",
-      "sortid": 63,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_icon"
@@ -491,7 +491,7 @@
     {
       "name": "AcidSplash",
       "type": "item",
-      "sortid": 64,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_splash"
@@ -499,7 +499,7 @@
     {
       "name": "AcidShooterProjectileHitsPlayer",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_shooter_projectile_hits_player",
@@ -515,7 +515,7 @@
     {
       "name": "AcidShooterWhileProjectileFlyingTick",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_shooter_while_projectile_flying_tick",
@@ -543,7 +543,7 @@
     {
       "name": "AcidShooter",
       "type": "rangeditem",
-      "sortid": 64,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_shooter"
@@ -551,7 +551,7 @@
     {
       "name": "AcidPotion",
       "type": "potion",
-      "sortid": 67,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_potion"
@@ -559,7 +559,7 @@
     {
       "name": "Vespeneparticle",
       "type": "particle",
-      "sortid": 68,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vespeneparticle"
@@ -567,7 +567,7 @@
     {
       "name": "Mineralore",
       "type": "block",
-      "sortid": 69,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mineral_ore"
@@ -575,7 +575,7 @@
     {
       "name": "VespeneBubble",
       "type": "item",
-      "sortid": 70,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vespene_bubble"
@@ -583,7 +583,7 @@
     {
       "name": "AcidShooterRecipe",
       "type": "recipe",
-      "sortid": 70,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_shooter_recipe"
@@ -591,7 +591,7 @@
     {
       "name": "SpineShooterRecipe",
       "type": "recipe",
-      "sortid": 71,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spine_shooter_recipe"
@@ -599,7 +599,7 @@
     {
       "name": "VespeneGeyser",
       "type": "block",
-      "sortid": 72,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vespene_geyser"
@@ -607,7 +607,7 @@
     {
       "name": "Deepslatemineralore",
       "type": "block",
-      "sortid": 73,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deepslatemineralore"
@@ -615,7 +615,7 @@
     {
       "name": "VespeneGeyserOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vespene_geyser_on_block_right_clicked",
@@ -647,7 +647,7 @@
     {
       "name": "EmptyVespeneBubble",
       "type": "item",
-      "sortid": 75,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "empty_vespene_bubble"
@@ -655,7 +655,7 @@
     {
       "name": "VespineBubbleRecipe",
       "type": "recipe",
-      "sortid": 76,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "vespine_bubble_recipe"
@@ -663,7 +663,7 @@
     {
       "name": "CreepTumor",
       "type": "block",
-      "sortid": 77,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "creep_tumor"
@@ -671,7 +671,7 @@
     {
       "name": "AcidFluid",
       "type": "fluid",
-      "sortid": 78,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acid_fluid",
@@ -682,7 +682,7 @@
     {
       "name": "StorageCocoon",
       "type": "block",
-      "sortid": 79,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "storage_cocoon"
@@ -690,7 +690,7 @@
     {
       "name": "Larva",
       "type": "livingentity",
-      "sortid": 80,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "larva"
@@ -698,7 +698,7 @@
     {
       "name": "Mineraldrops",
       "type": "loottable",
-      "sortid": 81,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mineraldrops"
@@ -706,7 +706,7 @@
     {
       "name": "FeralZerglingDrops",
       "type": "loottable",
-      "sortid": 82,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "feral_zergling_drops"
@@ -714,7 +714,7 @@
     {
       "name": "DeepslateMineralDrops",
       "type": "loottable",
-      "sortid": 84,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deepslate_mineral_drops"
@@ -722,7 +722,7 @@
     {
       "name": "WildRoachDrops",
       "type": "loottable",
-      "sortid": 85,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wild_roach_drops"
@@ -730,7 +730,7 @@
     {
       "name": "FeralRoachDrops",
       "type": "loottable",
-      "sortid": 86,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "feral_roach_drops"
@@ -738,7 +738,7 @@
     {
       "name": "WildHydraliskDrops",
       "type": "loottable",
-      "sortid": 87,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wild_hydralisk_drops"
@@ -746,7 +746,7 @@
     {
       "name": "HostileHydraliskDrops",
       "type": "loottable",
-      "sortid": 88,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hostile_hydralisk_drops"
@@ -754,7 +754,7 @@
     {
       "name": "SpineShooterWhileProjectileFlyingTick",
       "type": "procedure",
-      "sortid": 89,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spine_shooter_while_projectile_flying_tick",
@@ -782,7 +782,7 @@
     {
       "name": "CarapaceArmorBootsTickEvent",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_armor_boots_tick_event",
@@ -814,7 +814,7 @@
     {
       "name": "CarapaceArmor",
       "type": "armor",
-      "sortid": 91,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carapace_armor",
@@ -828,7 +828,7 @@
     {
       "name": "FeralRoachOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 92,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "feral_roach_on_initial_entity_spawn",
@@ -839,7 +839,7 @@
     {
       "name": "BroodHydralisk",
       "type": "livingentity",
-      "sortid": 93,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brood_hydralisk"
@@ -847,7 +847,7 @@
     {
       "name": "BroodRoach",
       "type": "livingentity",
-      "sortid": 94,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brood_roach"
@@ -855,7 +855,7 @@
     {
       "name": "BroodZergling",
       "type": "livingentity",
-      "sortid": 95,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "brood_zergling"
@@ -863,10 +863,34 @@
     {
       "name": "BlockOfZergChititnDark",
       "type": "block",
-      "sortid": 96,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "block_of_zerg_chititn_dark"
+    },
+    {
+      "name": "BroodZerglingDrops",
+      "type": "loottable",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brood_zergling_drops"
+    },
+    {
+      "name": "BroodHydraliskDrops",
+      "type": "loottable",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brood_hydralisk_drops"
+    },
+    {
+      "name": "BroodRoachDrops",
+      "type": "loottable",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brood_roach_drops"
     }
   ],
   "variable_elements": [],

@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:ZergCarapace"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -30,8 +30,8 @@
             "item": {
               "value": "CUSTOM:ZergClaw"
             },
-            "weight": 2,
-            "minCount": 1,
+            "weight": 1,
+            "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -52,25 +52,11 @@
             "affectedByFortune": true,
             "explosionDecay": false,
             "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:VespeneBubble"
-            },
-            "weight": 1,
-            "minCount": 0,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
           }
         ]
       }
     ],
-    "name": "entities/feral_roach",
+    "name": "entities/brood_zergling",
     "namespace": "mod"
   }
 }

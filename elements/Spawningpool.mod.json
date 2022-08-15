@@ -4,7 +4,7 @@
   "definition": {
     "structure": "spawning_pool",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First motion blocking block",
+    "surfaceDetectionType": "First block",
     "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 2,

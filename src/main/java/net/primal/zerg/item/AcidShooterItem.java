@@ -45,7 +45,7 @@ public class AcidShooterItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				AcidShooterEntity entityarrow = AcidShooterEntity.shoot(world, entity, world.getRandom(), 0.5f, 2, 0);
+				AcidShooterEntity entityarrow = AcidShooterEntity.shoot(world, entity, world.getRandom(), 0.5f, 0.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				entity.releaseUsingItem();

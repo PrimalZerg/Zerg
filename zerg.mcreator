@@ -437,7 +437,7 @@
       "type": "rangeditem",
       "sortid": 35,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "spine_shooter"
     },
     {
@@ -485,7 +485,7 @@
       "type": "potioneffect",
       "sortid": 75,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "acid_icon"
     },
     {
@@ -610,7 +610,7 @@
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "deepslatemineralore"
+      "registry_name": "deepslate_mineral_ore"
     },
     {
       "name": "VespeneGeyserOnBlockRightClicked",
@@ -696,28 +696,12 @@
       "registry_name": "larva"
     },
     {
-      "name": "Mineraldrops",
-      "type": "loottable",
-      "sortid": 85,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mineraldrops"
-    },
-    {
       "name": "FeralZerglingDrops",
       "type": "loottable",
       "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "feral_zergling_drops"
-    },
-    {
-      "name": "DeepslateMineralDrops",
-      "type": "loottable",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepslate_mineral_drops"
     },
     {
       "name": "WildRoachDrops",
@@ -923,6 +907,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "storage_cocoon_gui"
+    },
+    {
+      "name": "MineralOreDrops",
+      "type": "loottable",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mineral_ore_drops"
+    },
+    {
+      "name": "DeepslateMineralOreDrops",
+      "type": "loottable",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_mineral_ore_drops"
     }
   ],
   "variable_elements": [],
@@ -943,11 +943,10 @@
       "block.zerg.pink_zerg_carapace": "Pink Zerg Carapace",
       "item.zerg.brood_zergling_spawn_egg": "Zergling Spawn Egg",
       "block.zerg.light_blue_zerg_carapace": "Light BLue Zerg Carapace",
-      "item.zerg.wild_zergling_spawn_egg": "Feral Zergling Spawn Egg",
+      "item.zerg.wild_zergling_spawn_egg": "Wild Zergling Spawn Egg",
       "block.zerg.black_zerg_carapace": "BLack Zerg Carapace",
       "block.zerg.cyan_zerg_carapace": "Cyan Zerg Carapace",
       "block.zerg.medium_zerg_claw": "Medium Zerg Claw",
-      "block.zerg.deepslatemineralore": "Mineral Ore",
       "block.zerg.white_zerg_carapace": "White Zerg Carapace",
       "item.minecraft.tipped_arrow.effect.acid_potion": "Arrow of Acid",
       "item.zerg.hostile_zergling_spawn_egg": "Feral Zergling Spawn Egg",
@@ -994,11 +993,12 @@
       "item.zerg.carapace_armor_chestplate": "Carapace Chestplate",
       "block.zerg.block_of_zerg_chititn_dark": "Zerg Chitin",
       "entity.zerg.hostile_hydralisk": "Feral Hydralisk",
-      "entity.zerg.wild_zergling": "Feral Zergling",
+      "entity.zerg.wild_zergling": "Wild Zergling",
       "entity.zerg.wild_roach": "Feral Roach",
       "item.minecraft.lingering_potion.effect.acid_potion": "Lingering Potion of Acid",
       "item.zerg.brood_hydralisk_spawn_egg": "Hydralisk Spawn Egg",
       "entity.zerg.feral_roach": "Feral Roach",
+      "block.zerg.deepslate_mineral_ore": "Deepslate Mineral Ore",
       "block.zerg.purple_zerg_carapace": "Purple Zerg Carapace",
       "block.zerg.small_zerg_claw": "Small Zerg Claw"
     }

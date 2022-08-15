@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Zergling",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
+    "mobModelName": "Modelzergling",
     "mobModelTexture": "brood_zergling.png",
     "mobModelGlowTexture": "zergling_eyes.png",
     "modelWidth": 0.7,

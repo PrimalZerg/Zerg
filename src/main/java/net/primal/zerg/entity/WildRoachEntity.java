@@ -57,7 +57,7 @@ import java.util.List;
 public class WildRoachEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_ROACH.get(), 20, 1, 2));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_ROACH.get(), 10, 1, 2));
 	}
 
 	public WildRoachEntity(PlayMessages.SpawnEntity packet, Level world) {

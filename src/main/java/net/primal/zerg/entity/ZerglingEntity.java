@@ -55,7 +55,7 @@ import java.util.List;
 public class ZerglingEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_ZERGLING.get(), 30, 2, 6));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_ZERGLING.get(), 10, 2, 6));
 	}
 
 	public ZerglingEntity(PlayMessages.SpawnEntity packet, Level world) {

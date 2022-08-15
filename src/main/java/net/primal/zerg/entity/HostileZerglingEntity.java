@@ -43,7 +43,7 @@ import net.minecraft.network.protocol.Packet;
 public class HostileZerglingEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.HOSTILE_ZERGLING.get(), 30, 2, 6));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.HOSTILE_ZERGLING.get(), 15, 2, 6));
 	}
 
 	public HostileZerglingEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -52,7 +52,7 @@ public class HostileZerglingEntity extends Monster {
 
 	public HostileZerglingEntity(EntityType<HostileZerglingEntity> type, Level world) {
 		super(type, world);
-		xpReward = 5;
+		xpReward = 3;
 		setNoAi(false);
 	}
 
@@ -114,7 +114,7 @@ public class HostileZerglingEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.7999999999999999);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.7000000000000001);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 2);

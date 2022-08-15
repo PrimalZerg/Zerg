@@ -50,7 +50,7 @@ public class ZergModItems {
 	public static final RegistryObject<Item> BLOCK_OF_ZERG_CHITITN_DARK = block(ZergModBlocks.BLOCK_OF_ZERG_CHITITN_DARK, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> BLOCK_OF_ZERG_CHITIN = block(ZergModBlocks.BLOCK_OF_ZERG_CHITIN, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> MINERAL_ORE = block(ZergModBlocks.MINERAL_ORE, ZergModTabs.TAB_ZERG_MISC);
-	public static final RegistryObject<Item> DEEPSLATEMINERALORE = block(ZergModBlocks.DEEPSLATEMINERALORE, ZergModTabs.TAB_ZERG_MISC);
+	public static final RegistryObject<Item> DEEPSLATE_MINERAL_ORE = block(ZergModBlocks.DEEPSLATE_MINERAL_ORE, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> MINERAL_BLOCK = block(ZergModBlocks.MINERAL_BLOCK, ZergModTabs.TAB_ZERG_MISC);
 	public static final RegistryObject<Item> MINERAL_SHARD = REGISTRY.register("mineral_shard", () -> new MineralShardItem());
 	public static final RegistryObject<Item> ACID_FLUID_BUCKET = REGISTRY.register("acid_fluid_bucket", () -> new AcidFluidItem());

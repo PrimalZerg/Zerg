@@ -26,6 +26,7 @@ import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.AmbientParticleSettings;
 import net.minecraft.world.level.biome.AmbientMoodSettings;
+import net.minecraft.world.level.biome.AmbientAdditionsSettings;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.Music;
@@ -43,15 +44,17 @@ import java.util.List;
 
 public class ZergHiveBiome {
 	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.033333333334f, 0.166666666666f),
-			Climate.Parameter.span(-0.1f, 0.1f), Climate.Parameter.span(0.41f, 0.61f), Climate.Parameter.span(0.7f, 0.9f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.1f, 0.1f), Climate.Parameter.span(0.43f, 0.63f), Climate.Parameter.span(0.7f, 0.9f), Climate.Parameter.point(0),
 			Climate.Parameter.span(-0.579475160156f, -0.379475160156f), 0);
 
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-7444048).waterColor(-11030191).waterFogColor(-9717658)
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-7444048).waterColor(-9728371).waterFogColor(-9717658)
 				.skyColor(-7444048).foliageColorOverride(-10850769).grassColorOverride(-10850769)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("ambient.nether_wastes.loop")))
 				.ambientMoodSound(new AmbientMoodSettings(new SoundEvent(new ResourceLocation("ambient.nether_wastes.mood")), 2000, 8, 2))
+				.ambientAdditionsSound(new AmbientAdditionsSettings(new SoundEvent(new ResourceLocation("ambient.nether_wastes.additions")), 0.0111D))
 				.backgroundMusic(new Music(new SoundEvent(new ResourceLocation("music.nether.soul_sand_valley")), 12000, 24000, true))
-				.ambientParticle(new AmbientParticleSettings((SimpleParticleType) (ZergModParticleTypes.ACID_PARTICLE.get()), 0.002f)).build();
+				.ambientParticle(new AmbientParticleSettings((SimpleParticleType) (ZergModParticleTypes.ACID_PARTICLE.get()), 0.001f)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("zerg:tree_zerg_hive",
 				FeatureUtils.register("zerg:tree_zerg_hive", Feature.TREE,
@@ -80,6 +83,6 @@ public class ZergHiveBiome {
 
 	public static void init() {
 		BiomeDictionary.addTypes(ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(ZergModBiomes.ZERG_HIVE.get())),
-				BiomeDictionary.Type.RARE, BiomeDictionary.Type.SPARSE);
+				BiomeDictionary.Type.RARE, BiomeDictionary.Type.SPARSE, BiomeDictionary.Type.SPOOKY, BiomeDictionary.Type.WASTELAND);
 	}
 }

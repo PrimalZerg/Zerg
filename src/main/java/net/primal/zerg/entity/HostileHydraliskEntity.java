@@ -44,7 +44,7 @@ import net.minecraft.network.protocol.Packet;
 public class HostileHydraliskEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.HOSTILE_HYDRALISK.get(), 20, 1, 2));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.HOSTILE_HYDRALISK.get(), 10, 1, 2));
 	}
 
 	public HostileHydraliskEntity(PlayMessages.SpawnEntity packet, Level world) {

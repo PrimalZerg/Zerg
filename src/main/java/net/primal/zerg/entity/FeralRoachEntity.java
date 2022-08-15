@@ -53,7 +53,7 @@ import javax.annotation.Nullable;
 public class FeralRoachEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.FERAL_ROACH.get(), 20, 1, 2));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.FERAL_ROACH.get(), 15, 1, 2));
 	}
 
 	public FeralRoachEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -25,7 +25,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -11030191,
+      "value": -9728371,
       "falpha": 0.0
     },
     "waterFogColor": {
@@ -33,10 +33,10 @@
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "ambient.nether_wastes.loop"
     },
     "additionsSound": {
-      "value": ""
+      "value": "ambient.nether_wastes.additions"
     },
     "music": {
       "value": "music.nether.soul_sand_valley"
@@ -49,11 +49,11 @@
     "particleToSpawn": {
       "value": "CUSTOM:AcidParticle"
     },
-    "particlesProbability": 0.2,
+    "particlesProbability": 0.1,
     "biomeCategory": "NONE",
     "rainingPossibility": 0.5,
     "temperature": 0.6,
-    "baseHeight": 0.1,
+    "baseHeight": 0.30000000000000004,
     "heightVariation": 0.2,
     "spawnBiome": true,
     "spawnBiomeNether": false,
@@ -61,7 +61,9 @@
     "biomeWeight": 7,
     "biomeDictionaryTypes": [
       "RARE",
-      "SPARSE"
+      "SPARSE",
+      "SPOOKY",
+      "WASTELAND"
     ],
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
@@ -88,8 +90,8 @@
     "treeFruits": {
       "value": ""
     },
-    "spawnStronghold": false,
-    "spawnMineshaft": false,
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
     "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": false,
     "villageType": "none",

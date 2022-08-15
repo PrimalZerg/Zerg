@@ -1,5 +1,5 @@
 {
-  "parent": "zerg:block/deepslatemineralore",
+  "parent": "zerg:block/deepslate_mineral_ore",
   "display": {
     "thirdperson": {
       "rotation": [

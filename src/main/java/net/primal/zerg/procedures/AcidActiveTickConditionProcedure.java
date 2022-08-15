@@ -9,6 +9,6 @@ public class AcidActiveTickConditionProcedure {
 			return;
 		double baseRate = 0;
 		double rateWithAmplifier = 0;
-		entity.hurt(DamageSource.MAGIC, (float) 0.5);
+		entity.hurt(DamageSource.WITHER, 1);
 	}
 }

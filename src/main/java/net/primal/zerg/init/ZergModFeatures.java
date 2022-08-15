@@ -33,7 +33,7 @@ public class ZergModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> MINERAL_ORE = register("mineral_ore", MineraloreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MineraloreFeature.GENERATE_BIOMES, MineraloreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPSLATEMINERALORE = register("deepslatemineralore", DeepslatemineraloreFeature::feature,
+	public static final RegistryObject<Feature<?>> DEEPSLATE_MINERAL_ORE = register("deepslate_mineral_ore", DeepslatemineraloreFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepslatemineraloreFeature.GENERATE_BIOMES,
 					DeepslatemineraloreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> SPAWNINGPOOL = register("spawningpool", SpawningpoolFeature::feature, new FeatureRegistration(

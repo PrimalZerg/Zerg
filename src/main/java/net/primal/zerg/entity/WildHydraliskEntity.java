@@ -55,7 +55,7 @@ import java.util.List;
 public class WildHydraliskEntity extends TamableAnimal {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_HYDRALISK.get(), 20, 1, 2));
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ZergModEntities.WILD_HYDRALISK.get(), 5, 1, 2));
 	}
 
 	public WildHydraliskEntity(PlayMessages.SpawnEntity packet, Level world) {

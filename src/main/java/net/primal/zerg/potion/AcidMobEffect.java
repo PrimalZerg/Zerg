@@ -14,7 +14,7 @@ public class AcidMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.zerg.acid_icon";
+		return "effect.zerg.acid";
 	}
 
 	@Override

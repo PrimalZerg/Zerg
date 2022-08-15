@@ -72,7 +72,8 @@ public class ZergModBlocks {
 			() -> new BlockOfZergChititnDarkBlock());
 	public static final RegistryObject<Block> BLOCK_OF_ZERG_CHITIN = REGISTRY.register("block_of_zerg_chitin", () -> new BlockOfZergChitinBlock());
 	public static final RegistryObject<Block> MINERAL_ORE = REGISTRY.register("mineral_ore", () -> new MineraloreBlock());
-	public static final RegistryObject<Block> DEEPSLATEMINERALORE = REGISTRY.register("deepslatemineralore", () -> new DeepslatemineraloreBlock());
+	public static final RegistryObject<Block> DEEPSLATE_MINERAL_ORE = REGISTRY.register("deepslate_mineral_ore",
+			() -> new DeepslatemineraloreBlock());
 	public static final RegistryObject<Block> MINERAL_BLOCK = REGISTRY.register("mineral_block", () -> new MineralBlockBlock());
 	public static final RegistryObject<Block> ACID_FLUID = REGISTRY.register("acid_fluid", () -> new AcidFluidBlock());
 	public static final RegistryObject<Block> BIG_ZERG_CLAW = REGISTRY.register("big_zerg_claw", () -> new BigZergClawBlock());

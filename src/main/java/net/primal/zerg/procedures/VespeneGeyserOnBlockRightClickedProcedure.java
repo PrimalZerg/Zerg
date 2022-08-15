@@ -27,14 +27,7 @@ public class VespeneGeyserOnBlockRightClickedProcedure {
 				.get()
 				&& entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
 						ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getType() == HitResult.Type.BLOCK) {
-			if ((world.getFluidState(new BlockPos(
-					entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-							ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX(),
-					entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-							ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY(),
-					entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(5)),
-							ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()))
-					.createLegacyBlock()).getBlock() == ZergModBlocks.VESPENE_GEYSER.get()) {
+			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == ZergModBlocks.VESPENE_GEYSER.get()) {
 				if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof LivingEntity _entity) {
 						ItemStack _setstack = new ItemStack(ZergModItems.EMPTY_VESPENE_BUBBLE.get());
@@ -54,11 +47,10 @@ public class VespeneGeyserOnBlockRightClickedProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill_powder_snow")), SoundSource.NEUTRAL, 1,
-								1);
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill")),
+								SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill_powder_snow")),
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.fill")),
 								SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}

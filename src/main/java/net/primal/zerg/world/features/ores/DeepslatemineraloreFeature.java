@@ -43,9 +43,9 @@ public class DeepslatemineraloreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new DeepslatemineraloreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("zerg:deepslatemineralore", FEATURE,
-				new OreConfiguration(DeepslatemineraloreFeatureRuleTest.INSTANCE, ZergModBlocks.DEEPSLATEMINERALORE.get().defaultBlockState(), 7));
-		PLACED_FEATURE = PlacementUtils.register("zerg:deepslatemineralore", CONFIGURED_FEATURE,
+		CONFIGURED_FEATURE = FeatureUtils.register("zerg:deepslate_mineral_ore", FEATURE,
+				new OreConfiguration(DeepslatemineraloreFeatureRuleTest.INSTANCE, ZergModBlocks.DEEPSLATE_MINERAL_ORE.get().defaultBlockState(), 7));
+		PLACED_FEATURE = PlacementUtils.register("zerg:deepslate_mineral_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
 						HeightRangePlacement.uniform(VerticalAnchor.absolute(-65), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
 		return FEATURE;
@@ -78,7 +78,7 @@ public class DeepslatemineraloreFeature extends OreFeature {
 
 		@SubscribeEvent
 		public static void init(FMLCommonSetupEvent event) {
-			Registry.register(Registry.RULE_TEST, new ResourceLocation("zerg:deepslatemineralore_match"), CUSTOM_MATCH);
+			Registry.register(Registry.RULE_TEST, new ResourceLocation("zerg:deepslate_mineral_ore_match"), CUSTOM_MATCH);
 		}
 
 		private List<Block> base_blocks = null;

@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:MineralShard"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,

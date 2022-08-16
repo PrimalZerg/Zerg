@@ -16,7 +16,7 @@ public class BroodRoachRenderer extends MobRenderer<BroodRoachEntity, Modelroach
 		this.addLayer(new EyesLayer<BroodRoachEntity, Modelroach<BroodRoachEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("zerg:textures/wild_roach_eyes.png"));
+				return RenderType.eyes(new ResourceLocation("zerg:textures/roach_eyes.png"));
 			}
 		});
 	}

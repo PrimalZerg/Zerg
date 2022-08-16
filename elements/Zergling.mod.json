@@ -2,7 +2,7 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Wild Zergling",
+    "mobName": "Feral Zergling",
     "mobLabel": "",
     "mobModelName": "Modelzergling",
     "mobModelTexture": "wild_zergling.png",

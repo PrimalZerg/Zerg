@@ -6,7 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Modelroach",
     "mobModelTexture": "wild_roach.png",
-    "mobModelGlowTexture": "wild_roach_eyes.png",
+    "mobModelGlowTexture": "roach_eyes.png",
     "modelWidth": 1.3,
     "modelHeight": 1.5999999999999999,
     "modelShadowSize": 0.7,

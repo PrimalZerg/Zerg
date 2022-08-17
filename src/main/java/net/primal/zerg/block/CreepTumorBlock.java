@@ -47,7 +47,7 @@ public class CreepTumorBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 0, 0, 16, 15, 16).move(offset.x, offset.y, offset.z);
+		return box(0, 0, 0, 16, 15.5, 16).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

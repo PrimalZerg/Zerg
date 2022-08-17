@@ -60,13 +60,13 @@ public class CreepBlock extends FallingBlock {
 		switch ((Direction) state.getValue(FACING)) {
 			case SOUTH :
 			default :
-				return box(0, 0, 0, 16, 15, 16);
+				return box(0, 0, 0, 16, 15.5, 16);
 			case NORTH :
-				return box(0, 0, 0, 16, 15, 16);
+				return box(0, 0, 0, 16, 15.5, 16);
 			case EAST :
-				return box(0, 0, 0, 16, 15, 16);
+				return box(0, 0, 0, 16, 15.5, 16);
 			case WEST :
-				return box(0, 0, 0, 16, 15, 16);
+				return box(0, 0, 0, 16, 15.5, 16);
 		}
 	}
 

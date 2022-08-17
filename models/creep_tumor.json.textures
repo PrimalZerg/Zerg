@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "zerg_chitin_dark",
+        "0": "creep",
         "1": "creep_tumor"
       },
       "name": "default"

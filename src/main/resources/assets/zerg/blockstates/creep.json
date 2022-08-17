@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "zerg:block/creep"
+    },
+    "facing=east": {
+      "model": "zerg:block/creep",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "zerg:block/creep",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "zerg:block/creep",
+      "y": 270
     }
   }
 }

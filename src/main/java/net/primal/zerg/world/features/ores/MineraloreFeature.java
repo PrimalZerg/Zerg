@@ -44,9 +44,9 @@ public class MineraloreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new MineraloreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("zerg:mineral_ore", FEATURE,
-				new OreConfiguration(MineraloreFeatureRuleTest.INSTANCE, ZergModBlocks.MINERAL_ORE.get().defaultBlockState(), 7));
-		PLACED_FEATURE = PlacementUtils.register("zerg:mineral_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(4), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(64)), BiomeFilter.biome()));
+				new OreConfiguration(MineraloreFeatureRuleTest.INSTANCE, ZergModBlocks.MINERAL_ORE.get().defaultBlockState(), 6));
+		PLACED_FEATURE = PlacementUtils.register("zerg:mineral_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(2), InSquarePlacement.spread(),
+				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(50)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

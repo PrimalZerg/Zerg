@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 1,
-    "texture": "acid_shooter_item",
+    "texture": "acid_shooter",
     "customModelName": "acid_shooter:default",
     "name": "Acid Shooter",
     "specialInfo": [],

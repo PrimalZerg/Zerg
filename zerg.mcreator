@@ -437,7 +437,7 @@
       "type": "rangeditem",
       "sortid": 35,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "spine_shooter"
     },
     {

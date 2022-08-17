@@ -3,7 +3,7 @@
   "textures": {
     "all": "zerg:blocks/creep_tumor",
     "particle": "zerg:blocks/creep_tumor",
-    "0": "zerg:blocks/zerg_chitin_dark",
+    "0": "zerg:blocks/creep",
     "1": "zerg:blocks/creep_tumor"
   }
 }

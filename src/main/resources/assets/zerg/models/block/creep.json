@@ -1,7 +1,12 @@
 {
-  "parent": "zerg:custom/creep",
+  "parent": "block/cube",
   "textures": {
-    "all": "zerg:blocks/creep",
+    "down": "zerg:blocks/creep",
+    "up": "zerg:blocks/creep",
+    "north": "zerg:blocks/creep",
+    "east": "zerg:blocks/creep",
+    "south": "zerg:blocks/creep",
+    "west": "zerg:blocks/creep",
     "particle": "zerg:blocks/creep"
   }
 }
